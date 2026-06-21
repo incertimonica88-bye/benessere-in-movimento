@@ -35,6 +35,7 @@ async function loadHome() {
     document.getElementById('cta-title').textContent = d.cta_title;
     document.getElementById('cta-text').textContent = d.cta_text;
 
+    if (window.renderBlocksInto) window.renderBlocksInto('extra-blocks', d.extra_blocks);
     if (window.observeReveals) window.observeReveals();
   } catch (e) {
     console.warn('Impossibile caricare content/home.json', e);

@@ -44,7 +44,22 @@ https://vostro-sito.netlify.app/admin
 
 accedere con email e password, e modificare ogni blocco del sito: testi, immagini, orari dei corsi, recensioni, contatti — tutto tramite un semplice modulo, senza toccare codice. Ogni modifica salvata aggiorna automaticamente il sito online in 1-2 minuti.
 
-## 3. Struttura dei contenuti (per chi tocca i file a mano)
+## 3. Blocchi modulari ("Sezioni libere aggiuntive")
+
+In ogni pagina (Home, Chi sono, Corsi, Eventi e Formazione, Contatti), in fondo al modulo del pannello, c'è una sezione **"Sezioni libere aggiuntive"**. Da lì Giada può aggiungere nuovi blocchi scegliendo tra 6 tipi pronti:
+
+- **Testo + Immagine** (con immagine a sinistra o a destra)
+- **Citazione**
+- **Galleria foto**
+- **Video** (incolla un link "embed" di YouTube o Vimeo)
+- **Elenco punti**
+- **Invito all'azione (CTA)**
+
+Si possono aggiungere quanti blocchi si vuole, riordinarli con il trascina-rilascia dentro il pannello, ed eliminarli in qualsiasi momento — tutto senza toccare codice. Compaiono in fondo alla pagina, prima del riquadro finale di contatto.
+
+Se in futuro serve un tipo di blocco diverso da questi 6 (es. una mappa, un modulo di prenotazione), va aggiunto via codice — scrivetemi e lo implemento.
+
+## 4. Struttura dei contenuti (per chi tocca i file a mano)
 
 ```
 content/
@@ -53,11 +68,12 @@ content/
   chisono.json       → testi e immagini della pagina Chi sono
   corsi.json         → elenco corsi, con orari/luoghi/tag
   eventi.json        → testi e immagini di Eventi & Formazione
+  contatti.json      → eventuali blocchi extra della pagina Contatti
   testimonials.json  → tutte le recensioni
 ```
 
 Ogni pagina HTML carica il proprio file tramite uno script in `assets/js/page-*.js`. Se modifichi questi JSON a mano (senza pannello), basta salvare e ricaricare la pagina.
 
-## 4. Dominio personalizzato
+## 5. Dominio personalizzato
 
 Quando avrete acquistato il dominio, da Netlify → **Domain settings → Add a custom domain** e seguite le istruzioni per puntare i DNS.

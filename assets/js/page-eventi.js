@@ -29,6 +29,7 @@ async function loadEventi() {
     document.getElementById('ev-cta-title').textContent = d.cta_title;
     document.getElementById('ev-cta-text').textContent = d.cta_text;
 
+    if (window.renderBlocksInto) window.renderBlocksInto('extra-blocks', d.extra_blocks);
     if (window.observeReveals) window.observeReveals();
   } catch (e) {
     console.warn('Impossibile caricare content/eventi.json', e);

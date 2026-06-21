@@ -1,25 +1,26 @@
 {
-  "formazione_eyebrow": "Formazione",
-  "formazione_p1": "Mi occupo anche di formazione, proponendo percorsi per insegnanti e appassionati nel campo del movimento e delle discipline aeree, con particolare attenzione ai tessuti aerei e alla didattica.",
-  "formazione_p2": "Con Le SOS.pese e l'ASD SOSPESE portiamo avanti spettacoli, eventi e — da giugno 2023 — La Fiuma Summer Camp: tre giorni di lezioni che uniscono yoga, acrobatica aerea, preparazione fisica, meditazione, floorwork, danza e teatro.",
-  "eventi_title": "Occasioni per sperimentare",
-  "header_image": "assets/img/eventi-tramonto-1.jpg",
-  "cta_title": "Vuoi organizzare un evento insieme?",
   "eyebrow": "Eventi & Formazione",
+  "title": "Crescere, insieme",
+  "lede": "Workshop, eventi all'aperto e percorsi di formazione, per chi vuole approfondire la pratica o iniziare a insegnare.",
+  "header_image": "assets/img/eventi-tramonto-1.jpg",
+  "eventi_eyebrow": "Eventi & Workshop",
+  "eventi_title": "Esperienze da vivere insieme",
   "eventi_p1": "Durante l'anno organizzo eventi speciali, workshop e laboratori dedicati allo yoga e ai tessuti aerei: occasioni per approfondire la pratica, sperimentare nuove esperienze e condividere momenti di crescita, creatività e benessere.",
   "eventi_p2": "Le proposte sono rivolte ad adulti, bambini e famiglie e si svolgono in diverse location, collaborando con associazioni sportive e strutture del territorio per portare il benessere in contesti diversi — dal giardino al palco, dalla spiaggia alla festa di paese.",
+  "eventi_image_1": "assets/img/eventi-pitonfest.jpg",
+  "eventi_image_2": "assets/img/eventi-spiaggia.jpg",
   "gallery": [
     "assets/img/eventi-tramonto-2.jpg",
     "assets/img/eventi-pitonfest-2.jpg",
     "assets/img/corsi-tessuti-bambini-2.jpg",
     "assets/img/chisono-stage-3.jpg"
   ],
+  "formazione_eyebrow": "Formazione",
   "formazione_title": "Percorsi per insegnanti e appassionati",
+  "formazione_p1": "Mi occupo anche di formazione, proponendo percorsi per insegnanti e appassionati nel campo del movimento e delle discipline aeree, con particolare attenzione ai tessuti aerei e alla didattica.",
+  "formazione_p2": "Con Le SOS.pese e l'ASD SOSPESE portiamo avanti spettacoli, eventi e — da giugno 2023 — La Fiuma Summer Camp: tre giorni di lezioni che uniscono yoga, acrobatica aerea, preparazione fisica, meditazione, floorwork, danza e teatro.",
   "formazione_image": "assets/img/chisono-stage-1.jpg",
-  "title": "Crescere, insieme",
-  "eventi_eyebrow": "Eventi & Workshop",
-  "lede": "Workshop, eventi all'aperto e percorsi di formazione, per chi vuole approfondire la pratica o iniziare a insegnare.",
+  "cta_title": "Vuoi organizzare un evento insieme?",
   "cta_text": "Associazioni, aziende e strutture del territorio: scriviamo insieme la prossima esperienza.",
-  "eventi_image_1": "assets/img/eventi-pitonfest.jpg",
-  "eventi_image_2": "assets/img/eventi-spiaggia.jpg"
+  "extra_blocks": []
 }

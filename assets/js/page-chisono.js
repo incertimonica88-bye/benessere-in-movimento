@@ -35,6 +35,7 @@ async function loadChiSono() {
     document.getElementById('cs-cta-title').textContent = d.cta_title;
     document.getElementById('cs-cta-text').textContent = d.cta_text;
 
+    if (window.renderBlocksInto) window.renderBlocksInto('extra-blocks', d.extra_blocks);
     if (window.observeReveals) window.observeReveals();
   } catch (e) {
     console.warn('Impossibile caricare content/chisono.json', e);

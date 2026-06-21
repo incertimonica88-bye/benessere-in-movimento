@@ -102,6 +102,13 @@
     </div>
   </section>
 
+  <!-- BLOCCHI EXTRA (gestibili da pannello) -->
+  <section class="section">
+    <div class="container">
+      <div id="extra-blocks" class="extra-blocks"></div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="section">
     <div class="container">
@@ -167,18 +174,7 @@
 
 <script src="assets/js/main.js"></script>
 <script src="assets/js/site-data.js"></script>
+<script src="assets/js/blocks.js"></script>
 <script src="assets/js/page-home.js"></script>
-<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-<script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
-</script>  
 </body>
 </html>

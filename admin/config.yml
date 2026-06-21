@@ -59,6 +59,51 @@ collections:
           - { label: "Testimonianze — titolo", name: "testimonials_title", widget: "string" }
           - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
           - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
+          - label: "Sezioni libere aggiuntive"
+            name: "extra_blocks"
+            widget: "list"
+            hint: "Aggiungi qui nuovi blocchi: scegli il tipo, riordina con il trascina-rilascia, elimina quando vuoi."
+            types: &block_types
+              - label: "Testo + Immagine"
+                name: "testo_immagine"
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string", required: false }
+                  - { label: "Testo", name: "text", widget: "text", required: false }
+                  - { label: "Immagine", name: "image", widget: "image", required: false }
+                  - { label: "Posizione immagine", name: "image_position", widget: "select", options: ["sinistra", "destra"], default: "destra" }
+              - label: "Citazione"
+                name: "citazione"
+                fields:
+                  - { label: "Citazione", name: "quote", widget: "text" }
+                  - { label: "Autore (opzionale)", name: "author", widget: "string", required: false }
+              - label: "Galleria foto"
+                name: "galleria"
+                fields:
+                  - { label: "Titolo (opzionale)", name: "title", widget: "string", required: false }
+                  - label: "Immagini"
+                    name: "images"
+                    widget: "list"
+                    field: { label: "Immagine", name: "image", widget: "image" }
+              - label: "Video"
+                name: "video"
+                fields:
+                  - { label: "Titolo (opzionale)", name: "title", widget: "string", required: false }
+                  - { label: "Link video (embed)", name: "video_url", widget: "string", hint: "Usa il link \"embed\" di YouTube o Vimeo" }
+              - label: "Elenco punti"
+                name: "elenco"
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string", required: false }
+                  - label: "Punti"
+                    name: "items"
+                    widget: "list"
+                    field: { label: "Voce", name: "item", widget: "string" }
+              - label: "Invito all'azione (CTA)"
+                name: "cta"
+                fields:
+                  - { label: "Titolo", name: "title", widget: "string" }
+                  - { label: "Testo", name: "text", widget: "text", required: false }
+                  - { label: "Testo del pulsante", name: "button_text", widget: "string", required: false }
+                  - { label: "Link del pulsante", name: "button_link", widget: "string", required: false }
 
   - name: "chisono"
     label: "Pagina Chi sono"
@@ -99,6 +144,11 @@ collections:
             field: { label: "Immagine", name: "image", widget: "image" }
           - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
           - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
+          - label: "Sezioni libere aggiuntive"
+            name: "extra_blocks"
+            widget: "list"
+            hint: "Aggiungi qui nuovi blocchi: scegli il tipo, riordina con il trascina-rilascia, elimina quando vuoi."
+            types: *block_types
 
   - name: "corsi"
     label: "Pagina Corsi"
@@ -132,6 +182,11 @@ collections:
               - { label: "Link del pulsante", name: "cta_link", widget: "string", required: false }
           - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
           - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
+          - label: "Sezioni libere aggiuntive"
+            name: "extra_blocks"
+            widget: "list"
+            hint: "Aggiungi qui nuovi blocchi: scegli il tipo, riordina con il trascina-rilascia, elimina quando vuoi."
+            types: *block_types
 
   - name: "eventi"
     label: "Pagina Eventi e Formazione"
@@ -161,6 +216,24 @@ collections:
           - { label: "Formazione — immagine", name: "formazione_image", widget: "image" }
           - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
           - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
+          - label: "Sezioni libere aggiuntive"
+            name: "extra_blocks"
+            widget: "list"
+            hint: "Aggiungi qui nuovi blocchi: scegli il tipo, riordina con il trascina-rilascia, elimina quando vuoi."
+            types: *block_types
+
+  - name: "contatti"
+    label: "Pagina Contatti"
+    files:
+      - file: "content/contatti.json"
+        label: "Sezioni libere — Contatti"
+        name: "contatti"
+        fields:
+          - label: "Sezioni libere aggiuntive"
+            name: "extra_blocks"
+            widget: "list"
+            hint: "Aggiungi qui nuovi blocchi: scegli il tipo, riordina con il trascina-rilascia, elimina quando vuoi."
+            types: *block_types
 
   - name: "testimonianze"
     label: "Testimonianze"
@@ -174,6 +247,13 @@ collections:
             widget: "list"
             summary: "{{text}}"
             fields:
-              - { label: "Corso", name: "course", widget: "select", options: ["gravidanza"] }
+              - { label: "Corso", name: "course", widget: "select", options: [
+                  { label: "Yoga Flow", value: "yoga-flow" },
+                  { label: "Yoga e Ginnastica Dolce", value: "dolce" },
+                  { label: "Yoga in Gravidanza", value: "gravidanza" },
+                  { label: "Yoga e Allenamento Post Parto", value: "post-parto" },
+                  { label: "Tessuti Aerei", value: "tessuti" },
+                  { label: "Lezioni Private di Tessuti Aerei", value: "tessuti-private" }
+                ] }
               - { label: "Mostra anche in Home", name: "featured", widget: "boolean" }
               - { label: "Testo recensione", name: "text", widget: "text" }
