@@ -15,14 +15,7 @@
     "assets/img/chisono-stage-3.jpg"
   ],
   "formazione_title": "Percorsi per insegnanti e appassionati",
-  "extra_blocks": [
-    {
-      "type": "cta",
-      "title": "Contattami per conoscere gli eventi",
-      "button_text": "Contattami per conoscere gli eventi in programma",
-      "button_link": "https://effulgent-cendol-2a9241.netlify.app/contatti"
-    }
-  ],
+  "extra_blocks": [],
   "formazione_image": "assets/img/chisono-stage-1.jpg",
   "title": "Crescere, insieme",
   "eventi_eyebrow": "Eventi & Workshop",
