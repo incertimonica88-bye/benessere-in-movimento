@@ -1,0 +1,179 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+locale: "it"
+
+collections:
+
+  - name: "site"
+    label: "Impostazioni generali"
+    files:
+      - file: "content/site.json"
+        label: "Contatti & Social"
+        name: "site"
+        fields:
+          - { label: "Telefono (testo visibile)", name: "phone_display", widget: "string" }
+          - { label: "Telefono (per i link, es. +393496437677)", name: "phone_link", widget: "string" }
+          - { label: "Email", name: "email", widget: "string" }
+          - { label: "Instagram personale — handle", name: "instagram_personal_handle", widget: "string" }
+          - { label: "Instagram personale — link", name: "instagram_personal_url", widget: "string" }
+          - { label: "Instagram ASD Sospese — handle", name: "instagram_asd_handle", widget: "string" }
+          - { label: "Instagram ASD Sospese — link", name: "instagram_asd_url", widget: "string" }
+          - { label: "Indirizzo / zona", name: "address", widget: "string" }
+          - { label: "Frase nel footer", name: "footer_tagline", widget: "text" }
+          - { label: "Copyright nel footer", name: "footer_copyright", widget: "string" }
+
+  - name: "home"
+    label: "Pagina Home"
+    files:
+      - file: "content/home.json"
+        label: "Contenuti Home"
+        name: "home"
+        fields:
+          - { label: "Hero — etichetta sopra il titolo", name: "hero_eyebrow", widget: "string" }
+          - { label: "Hero — titolo", name: "hero_title", widget: "text", hint: "Vai a capo per spezzare il titolo su due righe" }
+          - { label: "Hero — sottotitolo", name: "hero_lede", widget: "text" }
+          - { label: "Hero — immagine", name: "hero_image", widget: "image" }
+          - { label: "Frase introduttiva (citazione)", name: "intro_quote", widget: "text" }
+          - { label: "Aree — etichetta", name: "areas_eyebrow", widget: "string" }
+          - { label: "Aree — titolo", name: "areas_title", widget: "string" }
+          - { label: "Aree — sottotitolo", name: "areas_lede", widget: "text" }
+          - label: "Aree di attività (le 4 card)"
+            name: "areas"
+            widget: "list"
+            fields:
+              - { label: "Titolo", name: "title", widget: "string" }
+              - { label: "Testo", name: "text", widget: "string" }
+              - { label: "Immagine", name: "image", widget: "image" }
+              - { label: "Link", name: "link", widget: "string" }
+          - { label: "Chi sono — etichetta", name: "chisono_eyebrow", widget: "string" }
+          - { label: "Chi sono — titolo", name: "chisono_title", widget: "string" }
+          - { label: "Chi sono — immagine", name: "chisono_image", widget: "image" }
+          - { label: "Chi sono — paragrafo 1", name: "chisono_text_1", widget: "text" }
+          - { label: "Chi sono — paragrafo 2", name: "chisono_text_2", widget: "text" }
+          - { label: "Testimonianze — etichetta", name: "testimonials_eyebrow", widget: "string" }
+          - { label: "Testimonianze — titolo", name: "testimonials_title", widget: "string" }
+          - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
+          - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
+
+  - name: "chisono"
+    label: "Pagina Chi sono"
+    files:
+      - file: "content/chisono.json"
+        label: "Contenuti Chi sono"
+        name: "chisono"
+        fields:
+          - { label: "Etichetta", name: "eyebrow", widget: "string" }
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Sottotitolo", name: "lede", widget: "text" }
+          - { label: "Immagine in alto", name: "header_image", widget: "image" }
+          - { label: "Storia — etichetta", name: "story_eyebrow", widget: "string" }
+          - { label: "Storia — titolo", name: "story_title", widget: "string" }
+          - { label: "Storia — paragrafo 1", name: "story_p1", widget: "text" }
+          - { label: "Storia — paragrafo 2", name: "story_p2", widget: "text" }
+          - { label: "Storia — immagine", name: "story_image", widget: "image" }
+          - { label: "ASD Sospese / Le SOS.pese — etichetta", name: "asd_eyebrow", widget: "string" }
+          - { label: "ASD Sospese / Le SOS.pese — titolo", name: "asd_title", widget: "string" }
+          - { label: "ASD Sospese / Le SOS.pese — paragrafo 1", name: "asd_p1", widget: "text" }
+          - { label: "ASD Sospese / Le SOS.pese — paragrafo 2", name: "asd_p2", widget: "text" }
+          - { label: "ASD Sospese / Le SOS.pese — immagine 1", name: "asd_image_1", widget: "image" }
+          - { label: "ASD Sospese / Le SOS.pese — immagine 2", name: "asd_image_2", widget: "image" }
+          - { label: "Formazione — etichetta", name: "credentials_eyebrow", widget: "string" }
+          - { label: "Formazione — titolo", name: "credentials_title", widget: "string" }
+          - { label: "Formazione — sottotitolo", name: "credentials_lede", widget: "text" }
+          - label: "Formazione — elenco Yoga"
+            name: "credentials_yoga"
+            widget: "list"
+            field: { label: "Voce", name: "item", widget: "string" }
+          - label: "Formazione — elenco Acrobatica Aerea"
+            name: "credentials_aerea"
+            widget: "list"
+            field: { label: "Voce", name: "item", widget: "string" }
+          - label: "Galleria foto"
+            name: "gallery"
+            widget: "list"
+            field: { label: "Immagine", name: "image", widget: "image" }
+          - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
+          - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
+
+  - name: "corsi"
+    label: "Pagina Corsi"
+    files:
+      - file: "content/corsi.json"
+        label: "Tutti i corsi"
+        name: "corsi"
+        fields:
+          - { label: "Titolo pagina", name: "page_title", widget: "string" }
+          - { label: "Sottotitolo pagina", name: "page_lede", widget: "text" }
+          - label: "Elenco corsi"
+            name: "courses"
+            widget: "list"
+            summary: "{{title}}"
+            fields:
+              - { label: "ID (non modificare, serve ai link)", name: "id", widget: "string" }
+              - { label: "Categoria (Yoga / Tessuti Aerei)", name: "category_label", widget: "string" }
+              - { label: "Titolo corso", name: "title", widget: "string" }
+              - label: "Etichette (es. Online, Presenza, Bambini)"
+                name: "tags"
+                widget: "list"
+                field: { label: "Etichetta", name: "tag", widget: "string" }
+              - { label: "Colore etichette", name: "tag_style", widget: "select", options: ["olive", "terra"] }
+              - { label: "Immagine", name: "image", widget: "image" }
+              - { label: "Descrizione", name: "description", widget: "text" }
+              - { label: "Nota aggiuntiva (opzionale)", name: "note", widget: "text", required: false }
+              - { label: "Mostra i campi Giorno/Orario e Luogo", name: "has_schedule", widget: "boolean" }
+              - { label: "Giorno e orario", name: "schedule_day", widget: "string", required: false }
+              - { label: "Luogo", name: "schedule_location", widget: "string", required: false }
+              - { label: "Testo del pulsante (se NON c'è orario)", name: "cta_text", widget: "string", required: false }
+              - { label: "Link del pulsante", name: "cta_link", widget: "string", required: false }
+          - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
+          - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
+
+  - name: "eventi"
+    label: "Pagina Eventi e Formazione"
+    files:
+      - file: "content/eventi.json"
+        label: "Contenuti Eventi e Formazione"
+        name: "eventi"
+        fields:
+          - { label: "Etichetta", name: "eyebrow", widget: "string" }
+          - { label: "Titolo", name: "title", widget: "string" }
+          - { label: "Sottotitolo", name: "lede", widget: "text" }
+          - { label: "Immagine in alto", name: "header_image", widget: "image" }
+          - { label: "Eventi — etichetta", name: "eventi_eyebrow", widget: "string" }
+          - { label: "Eventi — titolo", name: "eventi_title", widget: "string" }
+          - { label: "Eventi — paragrafo 1", name: "eventi_p1", widget: "text" }
+          - { label: "Eventi — paragrafo 2", name: "eventi_p2", widget: "text" }
+          - { label: "Eventi — immagine 1", name: "eventi_image_1", widget: "image" }
+          - { label: "Eventi — immagine 2", name: "eventi_image_2", widget: "image" }
+          - label: "Galleria foto"
+            name: "gallery"
+            widget: "list"
+            field: { label: "Immagine", name: "image", widget: "image" }
+          - { label: "Formazione — etichetta", name: "formazione_eyebrow", widget: "string" }
+          - { label: "Formazione — titolo", name: "formazione_title", widget: "string" }
+          - { label: "Formazione — paragrafo 1", name: "formazione_p1", widget: "text" }
+          - { label: "Formazione — paragrafo 2", name: "formazione_p2", widget: "text" }
+          - { label: "Formazione — immagine", name: "formazione_image", widget: "image" }
+          - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
+          - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
+
+  - name: "testimonianze"
+    label: "Testimonianze"
+    files:
+      - file: "content/testimonials.json"
+        label: "Elenco testimonianze"
+        name: "testimonianze"
+        fields:
+          - label: "Testimonianze"
+            name: "items"
+            widget: "list"
+            summary: "{{text}}"
+            fields:
+              - { label: "Corso", name: "course", widget: "select", options: ["gravidanza"] }
+              - { label: "Mostra anche in Home", name: "featured", widget: "boolean" }
+              - { label: "Testo recensione", name: "text", widget: "text" }
