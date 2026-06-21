@@ -1,12 +1,5 @@
 {
   "hero_eyebrow": "Montani Giada — Insegnante Yoga & Tessuti Aerei",
-  "hero_title": "Benessere\nin Movimento",
-  "hero_lede": "Corsi di yoga e percorsi di benessere corporeo, in presenza e online: lezioni di gruppo e individuali, yoga in gravidanza e post parto, tessuti aerei, workshop ed eventi a contatto con la natura.",
-  "hero_image": "assets/img/hero-home.jpg",
-  "intro_quote": "Uno spazio dedicato a chi vuole prendersi cura di sé attraverso il movimento e sviluppare maggior consapevolezza.",
-  "areas_eyebrow": "Le mie attività",
-  "areas_title": "Un percorso su misura, in ogni fase della vita",
-  "areas_lede": "Quattro modi per prendersi cura del corpo e della mente: scegli il tuo, in presenza o comodamente online.",
   "areas": [
     {
       "title": "Yoga Flow",
@@ -17,7 +10,7 @@
     {
       "title": "Gravidanza & Post Parto",
       "text": "Percorsi online dedicati alle mamme",
-      "image": "assets/img/area-gravidanza.jpg",
+      "image": "/assets/img/corsi-gravidanza-1.jpg",
       "link": "corsi.html#gravidanza"
     },
     {
@@ -29,18 +22,25 @@
     {
       "title": "Eventi & Formazione",
       "text": "Workshop, ritiri e percorsi per insegnanti",
-      "image": "assets/img/area-eventi.jpg",
+      "image": "/assets/img/eventi-tramonto-2.jpg",
       "link": "eventi-formazione.html"
     }
   ],
+  "intro_quote": "Uno spazio dedicato a chi vuole prendersi cura di sé attraverso il movimento e sviluppare maggior consapevolezza.",
+  "cta_title": "Pronta a iniziare?",
   "chisono_eyebrow": "Chi sono",
+  "testimonials_title": "Le parole di chi ha vissuto il percorso",
+  "areas_eyebrow": "Le mie attività",
+  "hero_title": "Benessere\nin Movimento",
+  "areas_lede": "Quattro modi per prendersi cura del corpo e della mente: scegli il tuo, in presenza o comodamente online.",
+  "extra_blocks": [],
+  "hero_image": "assets/img/hero-home.jpg",
   "chisono_title": "Giada Montani",
+  "cta_text": "Scrivimi per prenotare la tua prima lezione, in presenza o online.",
   "chisono_image": "assets/img/chisono-portrait.jpg",
   "chisono_text_1": "Insegnante di tessuti aerei e yoga, con la passione per l'esplorazione del movimento e il benessere del corpo. Ho incontrato lo yoga da adolescente e mi sono innamorata dell'acrobatica aerea nel 2016.",
-  "chisono_text_2": "Dal 1° gennaio 2026 ho dato vita a Benessere in Movimento, e sono co-fondatrice dell'ASD SOSPESE, che oggi conta più di 100 socie e soci.",
   "testimonials_eyebrow": "Testimonianze",
-  "testimonials_title": "Le parole di chi ha vissuto il percorso",
-  "cta_title": "Pronta a iniziare?",
-  "cta_text": "Scrivimi per prenotare la tua prima lezione, in presenza o online.",
-  "extra_blocks": []
+  "chisono_text_2": "Dal 1° gennaio 2026 ho dato vita a Benessere in Movimento, e sono co-fondatrice dell'ASD SOSPESE, che oggi conta più di 100 socie e soci.",
+  "hero_lede": "Corsi di yoga e percorsi di benessere corporeo, in presenza e online: lezioni di gruppo e individuali, yoga in gravidanza e post parto, tessuti aerei, workshop ed eventi a contatto con la natura.",
+  "areas_title": "Un percorso su misura, in ogni fase della vita"
 }
