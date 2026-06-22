@@ -1,0 +1,119 @@
+{
+  "page_title": "Trova il tuo percorso",
+  "page_lede": "Lezioni di gruppo e individuali, in presenza e online. Ogni corso indica la modalità disponibile — scrivimi per conoscere disponibilità e tariffe aggiornate.",
+  "courses": [
+    {
+      "id": "yoga-flow",
+      "category_label": "Yoga",
+      "title": "Yoga Flow",
+      "tags": [
+        "Online",
+        "Presenza",
+        "Registrazioni"
+      ],
+      "tag_style": "olive",
+      "image": "assets/img/corsi-yogaflow-1.jpg",
+      "description": "Una pratica fluida che unisce movimento, respiro e consapevolezza. Le lezioni sono adatte a diversi livelli e aiutano a migliorare forza, mobilità, equilibrio e benessere generale. Puoi praticare in presenza, online oppure seguire le lezioni registrate quando preferisci, rispettando i tuoi tempi e le tue esigenze.",
+      "note": "Tra le lezioni registrate trovi anche una libreria di video brevi di pratica Yoga Flow e un percorso dedicato ai 4 giorni della settimana del ciclo.",
+      "has_schedule": true,
+      "schedule_day": "Ogni lunedì, 18.30 – 19.30",
+      "schedule_location": "Palestra di Pieve di Coriano — Via Gorgadelli, 2, Borgomantovano (MN)",
+      "cta_text": "Scrivimi per le registrazioni on demand",
+      "cta_link": "contatti.html"
+    },
+    {
+      "id": "dolce",
+      "category_label": "Yoga",
+      "title": "Yoga e Ginnastica Dolce",
+      "tags": [
+        "Presenza"
+      ],
+      "tag_style": "olive",
+      "image": "assets/img/corsi-dolce-1.jpg",
+      "description": "Lezioni pensate per favorire il benessere fisico e mentale attraverso movimenti dolci, esercizi di mobilità, respirazione e rilassamento. Un'attività adatta a chi desidera migliorare la propria qualità di vita, mantenere il corpo attivo e ritrovare equilibrio, nel pieno rispetto delle proprie possibilità.",
+      "note": "",
+      "has_schedule": true,
+      "schedule_day": "Da definire",
+      "schedule_location": "Da definire",
+      "cta_text": "",
+      "cta_link": ""
+    },
+    {
+      "id": "gravidanza",
+      "category_label": "Yoga",
+      "title": "Yoga in Gravidanza",
+      "tags": [
+        "Online",
+        "Registrazioni"
+      ],
+      "tag_style": "terra",
+      "image": "assets/img/corsi-gravidanza-1.jpg",
+      "description": "Uno spazio dedicato alle future mamme per vivere la gravidanza con maggiore consapevolezza, serenità e ascolto del proprio corpo. Attraverso esercizi mirati, respirazione e rilassamento, la pratica accompagna i cambiamenti fisici ed emotivi di questo periodo speciale. Le lezioni si svolgono online e si può ricevere anche la registrazione.",
+      "note": "",
+      "has_schedule": false,
+      "schedule_day": "",
+      "schedule_location": "",
+      "cta_text": "Scrivimi per i prossimi appuntamenti",
+      "cta_link": "contatti.html"
+    },
+    {
+      "id": "post-parto",
+      "category_label": "Yoga",
+      "title": "Yoga e Allenamento Post Parto",
+      "tags": [
+        "Online",
+        "Registrazioni"
+      ],
+      "tag_style": "terra",
+      "image": "assets/img/corsi-postparto-1.jpg",
+      "description": "Un percorso pensato per accompagnare le neomamme nel recupero fisico e nel ritrovare benessere ed energia dopo la nascita. Le lezioni combinano yoga, esercizi di rinforzo e lavoro sul pavimento pelvico, nel rispetto dei tempi di ogni donna. Disponibile online con possibilità di ricevere la registrazione della lezione.",
+      "note": "",
+      "has_schedule": false,
+      "schedule_day": "",
+      "schedule_location": "",
+      "cta_text": "Scrivimi per i prossimi appuntamenti",
+      "cta_link": "contatti.html"
+    },
+    {
+      "id": "tessuti",
+      "category_label": "Tessuti Aerei",
+      "title": "Tessuti Aerei",
+      "tags": [
+        "Presenza",
+        "Bambini",
+        "Adolescenti",
+        "Adulti"
+      ],
+      "tag_style": "olive",
+      "image": "assets/img/corsi-tessuti-bambini-1.jpg",
+      "description": "Un'attività che unisce forza, coordinazione, flessibilità e creatività. I corsi sono rivolti a bambini, adolescenti e adulti e permettono di scoprire il piacere del movimento in sospensione, sviluppando fiducia in sé stessi e consapevolezza del proprio corpo in un ambiente sicuro e stimolante.",
+      "note": "",
+      "has_schedule": true,
+      "schedule_day": "Da definire",
+      "schedule_location": "Da definire — ASD Sospese",
+      "cta_text": "",
+      "cta_link": ""
+    },
+    {
+      "id": "tessuti-private",
+      "category_label": "Tessuti Aerei",
+      "title": "Lezioni Private di Tessuti Aerei",
+      "tags": [
+        "Online",
+        "Individuale"
+      ],
+      "tag_style": "terra",
+      "image": "assets/img/corsi-online.jpg",
+      "description": "Percorsi personalizzati online dedicati ad allieve che desiderano approfondire la tecnica, perfezionare figure e sequenze o raggiungere obiettivi specifici. Disponibili anche per insegnanti che vogliono ampliare le proprie competenze, studiare progressioni didattiche e confrontarsi su aspetti tecnici e metodologici dell'insegnamento.",
+      "note": "",
+      "has_schedule": false,
+      "schedule_day": "",
+      "schedule_location": "",
+      "cta_text": "Richiedi informazioni",
+      "cta_link": "contatti.html"
+    }
+  ],
+  "cta_title": "Non sai quale corso scegliere?",
+  "cta_text": "Scrivimi due righe: troviamo insieme il percorso più adatto a te.",
+  "extra_blocks": []
+}

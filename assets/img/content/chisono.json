@@ -1,0 +1,41 @@
+{
+  "eyebrow": "Chi sono",
+  "title": "Giada Montani",
+  "lede": "Insegnante di tessuti aerei e yoga, con la passione per l'esplorazione del movimento e il benessere del corpo.",
+  "header_image": "assets/img/chisono-portrait.jpg",
+  "story_eyebrow": "Il mio percorso",
+  "story_title": "Dal tappetino ai tessuti aerei",
+  "story_p1": "Ho incontrato lo yoga da adolescente e mi sono innamorata dell'acrobatica aerea nel 2016: da allora pratico e insegno entrambe le discipline con costanza, studiando con numerosi insegnanti e formatori per approfondire tecnica, didattica e progressioni.",
+  "story_p2": "Dal 1° gennaio 2026 ho dato vita a Benessere in Movimento, trasformando la mia dedizione in una realtà professionale strutturata: oggi metto la mia formazione certificata a disposizione di chiunque voglia scoprire le proprie potenzialità attraverso una pratica avvincente e inclusiva.",
+  "story_image": "assets/img/chisono-garden-1.jpg",
+  "asd_eyebrow": "ASD Sospese & Le SOS.pese",
+  "asd_title": "Una comunità sospesa tra cielo e terra",
+  "asd_p1": "Sono co-fondatrice dell'ASD SOSPESE, un'associazione sportiva che oggi conta più di 100 socie e soci tra bambini, adolescenti e adulti, e co-creatrice del gruppo di performer Le SOS.pese, con cui ho portato in scena lo spettacolo \"Le voyage dans la lune\", dedicato allo sbarco sulla Luna.",
+  "asd_p2": "Da giugno 2023 organizziamo anche La Fiuma Summer Camp: tre giorni di lezioni che uniscono yoga, acrobatica aerea, preparazione fisica, meditazione, floorwork, danza e teatro.",
+  "asd_image_1": "assets/img/chisono-stage-1.jpg",
+  "asd_image_2": "assets/img/chisono-stage-2.jpg",
+  "credentials_eyebrow": "Formazione",
+  "credentials_title": "Professionalità certificata",
+  "credentials_lede": "Una formazione solida, sicura e in continuo aggiornamento, alla base di ogni lezione.",
+  "credentials_yoga": [
+    "Diploma Internazionale Yoga Alliance RYS 200 — Hari Om, 2022",
+    "Master Training in Yoga in Gravidanza — Hari Om, 2024",
+    "Istruttrice Hatha Yoga II Livello — Albo Nazionale AIF",
+    "Workshop \"Movimento è Salute\" — postura, dolore e programmazione, 2025"
+  ],
+  "credentials_aerea": [
+    "Istruttrice Acrobatica Aerea (Tessuti) II Livello — Diploma Nazionale CSEN",
+    "Istruttrice Acrobatica Aerea (Tessuti) I Livello — Diploma Nazionale CSEN",
+    "Istruttrice Cerchio Base — CSEN, 2018",
+    "Formazione continua attraverso workshop e lezioni private"
+  ],
+  "gallery": [
+    "assets/img/chisono-stage-3.jpg",
+    "assets/img/chisono-studio-1.jpg",
+    "assets/img/chisono-garden-2.jpg",
+    "assets/img/chisono-garden-3.jpg"
+  ],
+  "cta_title": "Vuoi conoscermi di persona?",
+  "cta_text": "Scopri i corsi disponibili o scrivimi per qualsiasi domanda.",
+  "extra_blocks": []
+}
