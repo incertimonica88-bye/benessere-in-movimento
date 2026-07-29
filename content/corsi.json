@@ -123,6 +123,7 @@
       ],
       "id": "Prova esempio corso aggiuntivo",
       "image": "/assets/img/corsi-dolce-2.jpg",
+      "cta_text": "richiedi informazioni",
       "has_schedule": true,
       "description": "bla bla bla bla",
       "schedule_location": "Pieve di Coriano"
