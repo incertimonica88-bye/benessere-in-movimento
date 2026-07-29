@@ -115,11 +115,5 @@
   ],
   "cta_title": "Non sai quale corso scegliere?",
   "cta_text": "Scrivimi e troviamo insieme il percorso più adatto a te.",
-  "extra_blocks": [
-    {
-      "type": "video",
-      "title": "video prova",
-      "video_url": "https://youtu.be/sgfTHaQMqdw?si=JCfm9d3slO7mNeXI"
-    }
-  ]
+  "extra_blocks": []
 }
