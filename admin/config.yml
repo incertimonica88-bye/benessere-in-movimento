@@ -57,16 +57,32 @@ collections:
           - { label: "Chi sono — paragrafo 2", name: "chisono_text_2", widget: "text" }
           - { label: "Testimonianze — etichetta", name: "testimonials_eyebrow", widget: "string" }
           - { label: "Testimonianze — titolo", name: "testimonials_title", widget: "string" }
+          - label: "Testimonianze mostrate in Home (scegline 3)"
+            name: "testimonials"
+            widget: "list"
+            summary: "{{label}}"
+            fields:
+              - { label: "Etichetta corso", name: "label", widget: "string", hint: "Es. Corso di Yoga Flow" }
+              - { label: "Testo recensione", name: "text", widget: "text" }
           - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
           - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
           - label: "Sezioni libere aggiuntive"
             name: "extra_blocks"
             widget: "list"
-            hint: "Aggiungi qui nuovi blocchi: scegli il tipo, riordina con il trascina-rilascia, elimina quando vuoi."
+            hint: "Aggiungi qui nuovi blocchi: scegli il tipo e dove farlo comparire nella pagina (inizio/centro/fine). Riordina con il trascina-rilascia, elimina quando vuoi."
             types: &block_types
               - label: "Testo + Immagine"
                 name: "testo_immagine"
                 fields:
+                  - &block_position
+                    label: "Dove inserirlo nella pagina"
+                    name: "position"
+                    widget: "select"
+                    default: "fine"
+                    options:
+                      - { label: "Inizio pagina", value: "inizio" }
+                      - { label: "Centro pagina", value: "centro" }
+                      - { label: "Fine pagina (prima del modulo finale)", value: "fine" }
                   - { label: "Titolo", name: "title", widget: "string", required: false }
                   - { label: "Testo", name: "text", widget: "text", required: false }
                   - { label: "Immagine", name: "image", widget: "image", required: false }
@@ -74,11 +90,13 @@ collections:
               - label: "Citazione"
                 name: "citazione"
                 fields:
+                  - *block_position
                   - { label: "Citazione", name: "quote", widget: "text" }
                   - { label: "Autore (opzionale)", name: "author", widget: "string", required: false }
               - label: "Galleria foto"
                 name: "galleria"
                 fields:
+                  - *block_position
                   - { label: "Titolo (opzionale)", name: "title", widget: "string", required: false }
                   - label: "Immagini"
                     name: "images"
@@ -87,11 +105,13 @@ collections:
               - label: "Video"
                 name: "video"
                 fields:
+                  - *block_position
                   - { label: "Titolo (opzionale)", name: "title", widget: "string", required: false }
-                  - { label: "Link video (embed)", name: "video_url", widget: "string", hint: "Usa il link \"embed\" di YouTube o Vimeo" }
+                  - { label: "Link video", name: "video_url", widget: "string", hint: "Incolla il link YouTube o Vimeo che preferisci (anche quello del pulsante Condividi). Il sito lo converte da solo. La dimensione del riquadro è automatica." }
               - label: "Elenco punti"
                 name: "elenco"
                 fields:
+                  - *block_position
                   - { label: "Titolo", name: "title", widget: "string", required: false }
                   - label: "Punti"
                     name: "items"
@@ -100,6 +120,7 @@ collections:
               - label: "Invito all'azione (CTA)"
                 name: "cta"
                 fields:
+                  - *block_position
                   - { label: "Titolo", name: "title", widget: "string" }
                   - { label: "Testo", name: "text", widget: "text", required: false }
                   - { label: "Testo del pulsante", name: "button_text", widget: "string", required: false }
@@ -147,7 +168,7 @@ collections:
           - label: "Sezioni libere aggiuntive"
             name: "extra_blocks"
             widget: "list"
-            hint: "Aggiungi qui nuovi blocchi: scegli il tipo, riordina con il trascina-rilascia, elimina quando vuoi."
+            hint: "Aggiungi qui nuovi blocchi: scegli il tipo e dove farlo comparire nella pagina (inizio/centro/fine). Riordina con il trascina-rilascia, elimina quando vuoi."
             types: *block_types
 
   - name: "corsi"
@@ -180,12 +201,13 @@ collections:
               - { label: "Luogo", name: "schedule_location", widget: "string", required: false }
               - { label: "Testo del pulsante (se NON c'è orario)", name: "cta_text", widget: "string", required: false }
               - { label: "Link del pulsante", name: "cta_link", widget: "string", required: false }
+              - { label: "Link recensioni Google (opzionale)", name: "google_reviews_link", widget: "string", required: false, hint: "Se compilato, mostra un pulsante \"Leggi le recensioni su Google\" sotto le recensioni di questo corso" }
           - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
           - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
           - label: "Sezioni libere aggiuntive"
             name: "extra_blocks"
             widget: "list"
-            hint: "Aggiungi qui nuovi blocchi: scegli il tipo, riordina con il trascina-rilascia, elimina quando vuoi."
+            hint: "Aggiungi qui nuovi blocchi: scegli il tipo e dove farlo comparire nella pagina (inizio/centro/fine). Riordina con il trascina-rilascia, elimina quando vuoi."
             types: *block_types
 
   - name: "eventi"
@@ -219,7 +241,7 @@ collections:
           - label: "Sezioni libere aggiuntive"
             name: "extra_blocks"
             widget: "list"
-            hint: "Aggiungi qui nuovi blocchi: scegli il tipo, riordina con il trascina-rilascia, elimina quando vuoi."
+            hint: "Aggiungi qui nuovi blocchi: scegli il tipo e dove farlo comparire nella pagina (inizio/centro/fine). Riordina con il trascina-rilascia, elimina quando vuoi."
             types: *block_types
 
   - name: "contatti"
@@ -232,7 +254,7 @@ collections:
           - label: "Sezioni libere aggiuntive"
             name: "extra_blocks"
             widget: "list"
-            hint: "Aggiungi qui nuovi blocchi: scegli il tipo, riordina con il trascina-rilascia, elimina quando vuoi."
+            hint: "Aggiungi qui nuovi blocchi: scegli il tipo e dove farlo comparire nella pagina (inizio/centro/fine). Riordina con il trascina-rilascia, elimina quando vuoi."
             types: *block_types
 
   - name: "testimonianze"
@@ -255,5 +277,4 @@ collections:
                   { label: "Tessuti Aerei", value: "tessuti" },
                   { label: "Lezioni Private di Tessuti Aerei", value: "tessuti-private" }
                 ] }
-              - { label: "Mostra anche in Home", name: "featured", widget: "boolean" }
               - { label: "Testo recensione", name: "text", widget: "text" }
