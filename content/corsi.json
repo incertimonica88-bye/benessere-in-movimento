@@ -1,6 +1,11 @@
 {
+  "google_link": "https://share.google/6Fs4nJIuCUVRr7zc8",
   "page_title": "Trova il tuo percorso",
+  "cta_title": "Non sai quale corso scegliere?",
   "page_lede": "Lezioni di gruppo e individuali, in presenza e online. Ogni corso indica la modalità disponibile — scrivimi per conoscere disponibilità e tariffe aggiornate.",
+  "google_title": "Le recensioni complete su Google",
+  "google_text": "Leggi tutte le recensioni lasciate da chi ha già frequentato i corsi.",
+  "extra_blocks": [],
   "courses": [
     {
       "cta_link": "contatti.html",
@@ -59,25 +64,6 @@
       "schedule_location": ""
     },
     {
-      "cta_link": "",
-      "tag_style": "olive",
-      "note": "",
-      "category_label": "Tessuti Aerei",
-      "schedule_day": "Da definire",
-      "title": "Tessuti Aerei",
-      "tags": [
-        "Presenza",
-        "Bambini",
-        "Adolescenti",
-        "Adulti"
-      ],
-      "id": "tessuti",
-      "image": "assets/img/corsi-tessuti-bambini-1.jpg",
-      "cta_text": "",
-      "has_schedule": true,
-      "description": "Un'attività che unisce forza, coordinazione, flessibilità e creatività. I corsi sono rivolti a bambini, adolescenti e adulti e permettono di scoprire il piacere del movimento in sospensione, sviluppando fiducia in sé stessi e consapevolezza del proprio corpo in un ambiente sicuro e stimolante.",
-      "schedule_location": "Da definire — ASD Sospese",
-      "use_schedule_rows": true,
       "schedule_rows": [
         {
           "nome": "Minicirco Open",
@@ -128,7 +114,26 @@
           "prezzo_trimestrale": "255 €"
         }
       ],
-      "schedule_note": "Sconto famiglia 20%"
+      "cta_link": "",
+      "use_schedule_rows": true,
+      "tag_style": "olive",
+      "note": "",
+      "category_label": "Tessuti Aerei",
+      "schedule_day": "Da definire",
+      "title": "Tessuti Aerei",
+      "tags": [
+        "Presenza",
+        "Bambini",
+        "Adolescenti",
+        "Adulti"
+      ],
+      "schedule_note": "Sconto famiglia 20%",
+      "id": "tessuti",
+      "image": "assets/img/corsi-tessuti-bambini-1.jpg",
+      "cta_text": "",
+      "has_schedule": true,
+      "description": "Un'attività che unisce forza, coordinazione, flessibilità e creatività. I corsi sono rivolti a bambini, adolescenti e adulti e permettono di scoprire il piacere del movimento in sospensione, sviluppando fiducia in sé stessi e consapevolezza del proprio corpo in un ambiente sicuro e stimolante.",
+      "schedule_location": "Palestra di Pieve di Coriano — Via Gorgadelli, 2, Borgomantovano (MN)"
     },
     {
       "cta_link": "contatti.html",
@@ -167,11 +172,6 @@
       "schedule_location": "Porto Mantovano (MN)"
     }
   ],
-  "cta_title": "Non sai quale corso scegliere?",
-  "cta_text": "Scrivimi e troviamo insieme il percorso più adatto a te.",
-  "extra_blocks": [],
-  "google_title": "Le recensioni complete su Google",
-  "google_text": "Leggi tutte le recensioni lasciate da chi ha già frequentato i corsi.",
-  "google_link": "https://share.google/6Fs4nJIuCUVRr7zc8",
-  "google_button": "Leggi su Google"
+  "google_button": "Leggi su Google",
+  "cta_text": "Scrivimi e troviamo insieme il percorso più adatto a te."
 }
