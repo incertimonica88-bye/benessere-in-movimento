@@ -26,6 +26,7 @@ collections:
           - { label: "Indirizzo / zona", name: "address", widget: "string" }
           - { label: "Frase nel footer", name: "footer_tagline", widget: "text" }
           - { label: "Copyright nel footer", name: "footer_copyright", widget: "string" }
+          - { label: "Favicon — icona nella scheda del browser (immagine quadrata, meglio se 256x256 px o piu)", name: "favicon", widget: "image", required: false }
 
   - name: "home"
     label: "Pagina Home"
