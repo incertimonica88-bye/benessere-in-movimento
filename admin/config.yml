@@ -239,6 +239,13 @@ collections:
                   - { label: "Prezzo mensile", name: "prezzo_mensile", widget: "string", required: false }
                   - { label: "Prezzo trimestrale", name: "prezzo_trimestrale", widget: "string", required: false }
               - { label: "Nota sotto gli orari", name: "schedule_note", widget: "string", required: false, hint: "Es. Sconto famiglia 20%" }
+          - { label: "Yoga On Demand — etichetta sopra il titolo", name: "ondemand_eyebrow", widget: "string", required: false }
+          - { label: "Yoga On Demand — titolo", name: "ondemand_title", widget: "string", required: false, hint: "Se lasci vuoti sia titolo che testo, il banner non compare." }
+          - { label: "Yoga On Demand — testo", name: "ondemand_text", widget: "text", required: false }
+          - { label: "Yoga On Demand — immagine", name: "ondemand_image", widget: "image", required: false }
+          - { label: "Yoga On Demand — testo del pulsante", name: "ondemand_button_text", widget: "string", required: false }
+          - { label: "Yoga On Demand — PDF da scaricare", name: "ondemand_pdf", widget: "file", required: false, hint: "Quando carichi il PDF, il pulsante lo scarica. Finche' e' vuoto usa il link qui sotto." }
+          - { label: "Yoga On Demand — link del pulsante se non c'e' il PDF", name: "ondemand_button_link", widget: "string", required: false, hint: "Es. contatti.html" }
           - { label: "Recensioni Google — titolo", name: "google_title", widget: "string", required: false }
           - { label: "Recensioni Google — testo", name: "google_text", widget: "text", required: false }
           - { label: "Recensioni Google — link al profilo", name: "google_link", widget: "string", required: false, hint: "Se lasci vuoto questo campo, il blocco non compare nella pagina." }
