@@ -1,89 +1,18 @@
 {
   "google_link": "https://share.google/6Fs4nJIuCUVRr7zc8",
+  "ondemand_text": "Non riesci a partecipare alle lezioni? Contattami per accedere all'archivio Yoga On Demand: pratiche a tua disposizione, da fare e rifare quando e dove vuoi!",
+  "ondemand_title": "Yoga On Demand",
+  "ondemand_button_text": "Scopri di cosa si tratta",
+  "ondemand_image": "/assets/img/yoga-on-demand.png",
   "page_title": "Trova il tuo percorso",
   "cta_title": "Non sai quale corso scegliere?",
   "page_lede": "Mi trovi alla palestra di Pieve di Coriano per i corsi in presenza di yoga flow e tessuti aerei, a Porto Mantovano per ginnastica dolce e online (live o registrazioni on demand) per le lezioni individuali e di gruppo di yoga in gravidanza e post parto. Puoi contattarmi anche per lezioni private individuali di tessuti aerei. Scegli il percorso più adatto a te e se hai dubbi su quale sia, scrivimi!",
   "google_title": "Le recensioni complete su Google",
+  "ondemand_button_link": "contatti.html",
   "google_text": "Leggi tutte le recensioni lasciate da chi ha già frequentato i corsi.",
+  "ondemand_eyebrow": "Novità",
   "extra_blocks": [],
   "courses": [
-    {
-      "cta_link": "contatti.html",
-      "prices": [
-        {
-          "label": "Lezione singola",
-          "amount": "15 €"
-        },
-        {
-          "label": "Pacchetto 10 lezioni",
-          "amount": "100 €"
-        }
-      ],
-      "tag_style": "olive",
-      "gallery": [
-        "/assets/img/yoga-in-presenza-corso-giada-montani.jpg",
-        "/assets/img/yoga-in-presenza-corso-giada-montani-2.jpg",
-        "/assets/img/yoga-flow-corso-giada-montani_01.jpg",
-        "/assets/img/yoga-in-presenza-corso-pieve-giada-montani-4.jpg",
-        "/assets/img/yoga-online-lezioni-corso-giada-montani.jpg"
-      ],
-      "note": "",
-      "category_label": "Yoga",
-      "schedule_day": "Ogni lunedì, 18.30 – 19.30",
-      "gallery_position": "sotto",
-      "title": "Yoga Flow",
-      "tags": [
-        "Online",
-        "Presenza",
-        "Registrazioni"
-      ],
-      "id": "yoga-flow",
-      "image": "/assets/img/yoga-flow-con-giada-montani.jpg",
-      "cta_text": "Scrivimi per le registrazioni on demand",
-      "has_schedule": true,
-      "description": "Una pratica fluida che unisce movimento, respiro e consapevolezza. Le lezioni sono adatte a diversi livelli e aiutano a migliorare forza, mobilità, equilibrio e benessere generale. Puoi praticare in presenza, online oppure seguire le lezioni registrate quando preferisci, rispettando i tuoi tempi e le tue esigenze.",
-      "schedule_location": "Palestra di Pieve di Coriano — Via Gorgadelli, 2, Borgomantovano (MN)"
-    },
-    {
-      "cta_link": "contatti.html",
-      "tag_style": "terra",
-      "gallery": [
-        null
-      ],
-      "note": "",
-      "category_label": "Yoga",
-      "schedule_day": "",
-      "title": "Yoga in Gravidanza",
-      "tags": [
-        "Online",
-        "Registrazioni"
-      ],
-      "id": "gravidanza",
-      "image": "assets/img/corsi-gravidanza-1.jpg",
-      "cta_text": "Scrivimi per i prossimi appuntamenti",
-      "has_schedule": false,
-      "description": "Uno spazio dedicato alle future mamme per vivere la gravidanza con maggiore consapevolezza, serenità e ascolto del proprio corpo. Attraverso esercizi mirati, respirazione e rilassamento, la pratica accompagna i cambiamenti fisici ed emotivi di questo periodo speciale. Le lezioni si svolgono online e si può ricevere anche la registrazione.",
-      "schedule_location": ""
-    },
-    {
-      "cta_link": "contatti.html",
-      "tag_style": "terra",
-      "note": "",
-      "category_label": "Yoga",
-      "schedule_day": "",
-      "title": "Yoga e Allenamento Post Parto",
-      "tags": [
-        "Online",
-        "One to one",
-        "Di gruppo"
-      ],
-      "id": "post-parto",
-      "image": "assets/img/corsi-postparto-1.jpg",
-      "cta_text": "Scrivimi per i prossimi appuntamenti",
-      "has_schedule": false,
-      "description": "Un percorso pensato per accompagnare le neomamme nel recupero fisico e nel ritrovare benessere ed energia dopo la nascita. Le lezioni combinano yoga, esercizi di rinforzo e lavoro sul pavimento pelvico, nel rispetto dei tempi di ogni donna. Disponibile online con possibilità di ricevere la registrazione della lezione.",
-      "schedule_location": ""
-    },
     {
       "schedule_rows": [
         {
@@ -182,6 +111,83 @@
       "schedule_location": ""
     },
     {
+      "cta_link": "contatti.html",
+      "prices": [
+        {
+          "label": "Lezione singola",
+          "amount": "15 €"
+        },
+        {
+          "label": "Pacchetto 10 lezioni",
+          "amount": "100 €"
+        }
+      ],
+      "tag_style": "olive",
+      "gallery": [
+        "/assets/img/yoga-in-presenza-corso-giada-montani.jpg",
+        "/assets/img/yoga-in-presenza-corso-giada-montani-2.jpg",
+        "/assets/img/yoga-flow-corso-giada-montani_01.jpg",
+        "/assets/img/yoga-in-presenza-corso-pieve-giada-montani-4.jpg",
+        "/assets/img/yoga-online-lezioni-corso-giada-montani.jpg"
+      ],
+      "note": "",
+      "category_label": "Yoga",
+      "schedule_day": "Ogni lunedì, 18.30 – 19.30",
+      "gallery_position": "sotto",
+      "title": "Yoga Flow",
+      "tags": [
+        "Online",
+        "Presenza",
+        "Registrazioni"
+      ],
+      "id": "yoga-flow",
+      "image": "/assets/img/yoga-flow-con-giada-montani.jpg",
+      "cta_text": "Scrivimi per le registrazioni on demand",
+      "has_schedule": true,
+      "description": "Una pratica fluida che unisce movimento, respiro e consapevolezza. Le lezioni sono adatte a diversi livelli e aiutano a migliorare forza, mobilità, equilibrio e benessere generale. Puoi praticare in presenza, online oppure seguire le lezioni registrate quando preferisci, rispettando i tuoi tempi e le tue esigenze.",
+      "schedule_location": "Palestra di Pieve di Coriano — Via Gorgadelli, 2, Borgomantovano (MN)"
+    },
+    {
+      "cta_link": "contatti.html",
+      "tag_style": "terra",
+      "gallery": [
+        null
+      ],
+      "note": "",
+      "category_label": "Yoga",
+      "schedule_day": "",
+      "title": "Yoga in Gravidanza",
+      "tags": [
+        "Online",
+        "Registrazioni"
+      ],
+      "id": "gravidanza",
+      "image": "assets/img/corsi-gravidanza-1.jpg",
+      "cta_text": "Scrivimi per i prossimi appuntamenti",
+      "has_schedule": false,
+      "description": "Uno spazio dedicato alle future mamme per vivere la gravidanza con maggiore consapevolezza, serenità e ascolto del proprio corpo. Attraverso esercizi mirati, respirazione e rilassamento, la pratica accompagna i cambiamenti fisici ed emotivi di questo periodo speciale. Le lezioni si svolgono online e si può ricevere anche la registrazione.",
+      "schedule_location": ""
+    },
+    {
+      "cta_link": "contatti.html",
+      "tag_style": "terra",
+      "note": "",
+      "category_label": "Yoga",
+      "schedule_day": "",
+      "title": "Yoga e Allenamento Post Parto",
+      "tags": [
+        "Online",
+        "One to one",
+        "Di gruppo"
+      ],
+      "id": "post-parto",
+      "image": "assets/img/corsi-postparto-1.jpg",
+      "cta_text": "Scrivimi per i prossimi appuntamenti",
+      "has_schedule": false,
+      "description": "Un percorso pensato per accompagnare le neomamme nel recupero fisico e nel ritrovare benessere ed energia dopo la nascita. Le lezioni combinano yoga, esercizi di rinforzo e lavoro sul pavimento pelvico, nel rispetto dei tempi di ogni donna. Disponibile online con possibilità di ricevere la registrazione della lezione.",
+      "schedule_location": ""
+    },
+    {
       "google_reviews_link": "",
       "cta_link": "",
       "tag_style": "olive",
@@ -202,11 +208,5 @@
   ],
   "google_button": "Leggi su Google",
   "cta_text": "Scrivimi e troviamo insieme il percorso più adatto a te.",
-  "ondemand_eyebrow": "Novità",
-  "ondemand_title": "Yoga On Demand",
-  "ondemand_text": "Non riesci a partecipare alle lezioni? Contattami per accedere all'archivio Yoga On Demand: pratiche a tua disposizione, da fare e rifare quando e dove vuoi!",
-  "ondemand_image": "/assets/img/yoga-on-demand.png",
-  "ondemand_button_text": "Scopri di cosa si tratta",
-  "ondemand_pdf": "",
-  "ondemand_button_link": "contatti.html"
+  "ondemand_pdf": ""
 }
