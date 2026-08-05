@@ -142,4 +142,24 @@ function renderBlocksGrouped(blocks) {
   if (window.observeReveals) window.observeReveals();
 }
 
+// Inserisce i blocchi in un unico contenitore e NASCONDE la sezione che lo avvolge
+// quando non c'e' nessun blocco, cosi' non resta spazio vuoto nella pagina.
+function renderBlocksInto(containerId, blocks) {
+  const container = document.getElementById(containerId);
+  if (!container) return;
+  const section = container.closest('section');
+  const list = blocks || [];
+
+  if (list.length) {
+    container.innerHTML = list.map(renderBlock).join('');
+    if (section) section.style.display = '';
+  } else {
+    container.innerHTML = '';
+    if (section) section.style.display = 'none';
+  }
+
+  if (window.observeReveals) window.observeReveals();
+}
+
+window.renderBlocksInto = renderBlocksInto;
 window.renderBlocksGrouped = renderBlocksGrouped;
