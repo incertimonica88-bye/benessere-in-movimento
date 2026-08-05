@@ -138,6 +138,13 @@
       "cta_link": "",
       "use_schedule_rows": true,
       "tag_style": "olive",
+      "gallery": [
+        "/assets/img/tessuti-aerei-bambini-sos-pese-2.jpg",
+        "/assets/img/tessuti-aerei-adolescenti-sos-pese-2.jpg",
+        "/assets/img/tessuti-aerei-bambini-sos-pese-3.jpg",
+        "/assets/img/tessuti-aerei-adulti-sos-pese-3.jpg",
+        "/assets/img/tessuti-aerei-bambini-sos-pese-1.jpg"
+      ],
       "note": "",
       "category_label": "Tessuti Aerei",
       "schedule_day": "Da definire",
@@ -150,7 +157,7 @@
       ],
       "schedule_note": "Sconto famiglia 20%",
       "id": "tessuti",
-      "image": "assets/img/corsi-tessuti-bambini-1.jpg",
+      "image": "/assets/img/file.jpg",
       "cta_text": "",
       "has_schedule": true,
       "description": "Un'attività che unisce forza, coordinazione, flessibilità e creatività. I corsi sono rivolti a bambini, adolescenti e adulti e permettono di scoprire il piacere del movimento in sospensione, sviluppando fiducia in sé stessi e consapevolezza del proprio corpo in un ambiente sicuro e stimolante.",
