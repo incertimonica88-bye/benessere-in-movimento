@@ -9,7 +9,23 @@
   "courses": [
     {
       "cta_link": "contatti.html",
+      "prices": [
+        {
+          "label": "Lezione singola",
+          "amount": "15 €"
+        },
+        {
+          "label": "Pacchetto 10 lezioni",
+          "amount": "100 €"
+        }
+      ],
       "tag_style": "olive",
+      "gallery": [
+        "/assets/img/yoga-in-presenza-corso-giada-montani-2.jpg",
+        "/assets/img/yoga-in-presenza-corso-giada-montani-2.jpg",
+        "/assets/img/yoga-corso-giada-montani_.jpg",
+        "/assets/img/yoga-in-presenza-corso-pieve-giada-montani-4.jpg"
+      ],
       "note": "",
       "category_label": "Yoga",
       "schedule_day": "Ogni lunedì, 18.30 – 19.30",
@@ -24,21 +40,14 @@
       "cta_text": "Scrivimi per le registrazioni on demand",
       "has_schedule": true,
       "description": "Una pratica fluida che unisce movimento, respiro e consapevolezza. Le lezioni sono adatte a diversi livelli e aiutano a migliorare forza, mobilità, equilibrio e benessere generale. Puoi praticare in presenza, online oppure seguire le lezioni registrate quando preferisci, rispettando i tuoi tempi e le tue esigenze.",
-      "schedule_location": "Palestra di Pieve di Coriano — Via Gorgadelli, 2, Borgomantovano (MN)",
-      "prices": [
-        {
-          "label": "Lezione singola",
-          "amount": "15 €"
-        },
-        {
-          "label": "Pacchetto 10 lezioni",
-          "amount": "100 €"
-        }
-      ]
+      "schedule_location": "Palestra di Pieve di Coriano — Via Gorgadelli, 2, Borgomantovano (MN)"
     },
     {
       "cta_link": "contatti.html",
       "tag_style": "terra",
+      "gallery": [
+        null
+      ],
       "note": "",
       "category_label": "Yoga",
       "schedule_day": "",
