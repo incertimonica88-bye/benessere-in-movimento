@@ -297,6 +297,9 @@ collections:
         label: "Sezioni libere — Contatti"
         name: "contatti"
         fields:
+          - { label: "Consenso privacy — testo", name: "privacy_text", widget: "text", required: false, hint: "Incolla qui il testo generato da iubenda. Se lasci vuoto resta la frase predefinita." }
+          - { label: "Consenso privacy — link all'informativa", name: "privacy_link", widget: "string", required: false, hint: "L'indirizzo dell'informativa iubenda. Se vuoto non compare nessun link." }
+          - { label: "Consenso privacy — testo del link", name: "privacy_link_text", widget: "string", required: false, hint: "Se vuoto scrive: Informativa privacy" }
           - label: "Sezioni libere aggiuntive"
             name: "extra_blocks"
             widget: "list"
