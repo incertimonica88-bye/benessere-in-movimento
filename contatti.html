@@ -96,7 +96,11 @@
         <h2>Mandami un messaggio</h2>
         <p class="lede">Compila il form: si aprirà il tuo programma di posta con il messaggio pronto da inviare.</p>
       </div>
-      <form id="contact-form" class="reveal" action="#" method="post" enctype="text/plain" style="display:flex; flex-direction:column; gap:1.1rem;">
+      <form id="contact-form" class="reveal" name="contatti" method="POST"
+            action="/grazie" data-netlify="true" netlify-honeypot="bot-field"
+            style="display:flex; flex-direction:column; gap:1.1rem;">
+        <input type="hidden" name="form-name" value="contatti">
+        <p hidden><label>Non compilare questo campo: <input name="bot-field"></label></p>
         <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.1rem;">
           <div style="display:flex; flex-direction:column; gap:0.4rem;">
             <label for="nome" style="font-size:0.85rem; font-weight:700;">Nome</label>
@@ -124,6 +128,10 @@
           <label for="messaggio" style="font-size:0.85rem; font-weight:700;">Messaggio</label>
           <textarea id="messaggio" name="Messaggio" rows="5" required style="padding:0.8rem; border:1px solid var(--line); border-radius:var(--radius); font-family:var(--font-body); resize:vertical;"></textarea>
         </div>
+        <label style="display:flex; align-items:flex-start; gap:0.6rem; font-size:0.85rem; color:var(--ink-soft); line-height:1.5;">
+          <input type="checkbox" name="Privacy" value="Accettata" required style="margin-top:0.25rem; flex:0 0 auto;">
+          <span id="privacy-text">Ho letto e accetto l'informativa sul trattamento dei dati personali.</span>
+        </label>
         <button type="submit" class="btn btn--primary" style="align-self:flex-start;">Invia messaggio</button>
       </form>
     </div>
