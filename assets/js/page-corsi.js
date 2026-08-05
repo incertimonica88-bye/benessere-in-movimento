@@ -139,22 +139,6 @@ function renderOnDemand(d) {
     </div>`;
 }
 
-function renderGoogleReviews(d) {
-  if (!d.google_link) return '';
-  return `
-    <div class="gmaps reveal">
-      <div class="gmaps__left">
-        <div class="gmaps__logo">G</div>
-        <div>
-          <h3>${d.google_title || 'Le recensioni complete su Google'}</h3>
-          <div class="gmaps__stars">★★★★★</div>
-          ${d.google_text ? `<p>${d.google_text}</p>` : ''}
-        </div>
-      </div>
-      <a class="btn btn--primary" href="${d.google_link}" target="_blank" rel="noopener">${d.google_button || 'Leggi su Google'}</a>
-    </div>`;
-}
-
 async function loadCorsi() {
   try {
     const res = await fetch('content/corsi.json');
@@ -190,16 +174,6 @@ async function loadCorsi() {
     if (odBox && odSection) {
       const odHtml = renderOnDemand(d);
       if (odHtml) { odBox.innerHTML = odHtml; odSection.style.display = ''; }
-    }
-
-    const gBox = document.getElementById('google-reviews');
-    const gSection = document.getElementById('google-reviews-section');
-    if (gBox && gSection) {
-      const gHtml = renderGoogleReviews(d);
-      if (gHtml) {
-        gBox.innerHTML = gHtml;
-        gSection.style.display = '';
-      }
     }
 
     document.getElementById('corsi-cta-title').textContent = d.cta_title;

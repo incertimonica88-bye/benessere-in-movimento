@@ -44,21 +44,44 @@ async function loadHome() {
 
 async function loadHomeTestimonials() {
   try {
-    const res = await fetch('content/testimonials.json');
-    const items = (await res.json()).items || [];
-    const featured = items.filter(t => t.featured).slice(0, 3);
+    const res = await fetch('content/home.json');
+    const d = await res.json();
+
+    // Prima scelta: le recensioni scelte dal pannello nella pagina Home.
+    let items = (d.testimonials || []).filter(t => t && t.text);
+
+    // Ripiego: quelle segnate "in evidenza" nell'elenco testimonianze.
+    if (!items.length) {
+      const tr = await fetch('content/testimonials.json');
+      items = ((await tr.json()).items || [])
+        .filter(t => t.featured).slice(0, 3)
+        .map(t => ({ label: '', text: t.text }));
+    }
+
     const grid = document.getElementById('testimonials-grid');
-    grid.innerHTML = featured.map(t => `
+    if (grid) {
+      grid.innerHTML = items.map(t => `
       <div class="testi-card reveal">
         <div class="testi-card__stars">★★★★★</div>
         <p>"${t.text}"</p>
-        <div class="testi-card__meta">Corso di Yoga in Gravidanza</div>
+        ${t.label ? `<div class="testi-card__meta">${t.label}</div>` : ''}
       </div>`).join('');
+    }
+
+    const more = document.getElementById('testimonials-more');
+    const link = document.getElementById('testimonials-more-link');
+    if (more && link && d.reviews_link) {
+      link.setAttribute('href', d.reviews_link);
+      link.textContent = d.reviews_button || 'Leggi tutte le recensioni';
+      more.style.display = '';
+    }
+
     if (window.observeReveals) window.observeReveals();
   } catch (e) {
-    console.warn('Impossibile caricare content/testimonials.json', e);
+    console.warn('Impossibile caricare le testimonianze della Home', e);
   }
 }
+
 
 document.addEventListener('DOMContentLoaded', () => {
   loadHome();
