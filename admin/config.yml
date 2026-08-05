@@ -65,6 +65,8 @@ collections:
             fields:
               - { label: "Etichetta corso", name: "label", widget: "string", hint: "Es. Corso di Yoga Flow" }
               - { label: "Testo recensione", name: "text", widget: "text" }
+          - { label: "Recensioni — link al profilo Google", name: "reviews_link", widget: "string", required: false, hint: "Se lasci vuoto, il pulsante sotto le recensioni non compare." }
+          - { label: "Recensioni — testo del pulsante", name: "reviews_button", widget: "string", required: false, hint: "Se lasci vuoto scrive: Leggi tutte le recensioni" }
           - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
           - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
           - label: "Sezioni libere aggiuntive"
@@ -246,10 +248,6 @@ collections:
           - { label: "Yoga On Demand — testo del pulsante", name: "ondemand_button_text", widget: "string", required: false }
           - { label: "Yoga On Demand — PDF da scaricare", name: "ondemand_pdf", widget: "file", required: false, hint: "Quando carichi il PDF, il pulsante lo scarica. Finche' e' vuoto usa il link qui sotto." }
           - { label: "Yoga On Demand — link del pulsante se non c'e' il PDF", name: "ondemand_button_link", widget: "string", required: false, hint: "Es. contatti.html" }
-          - { label: "Recensioni Google — titolo", name: "google_title", widget: "string", required: false }
-          - { label: "Recensioni Google — testo", name: "google_text", widget: "text", required: false }
-          - { label: "Recensioni Google — link al profilo", name: "google_link", widget: "string", required: false, hint: "Se lasci vuoto questo campo, il blocco non compare nella pagina." }
-          - { label: "Recensioni Google — testo del pulsante", name: "google_button", widget: "string", required: false }
           - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
           - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
           - label: "Sezioni libere aggiuntive"
