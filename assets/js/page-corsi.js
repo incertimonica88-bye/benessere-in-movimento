@@ -115,6 +115,28 @@ function renderCategoryNav(courses) {
   return courses.map(c => `<a href="#${c.id}">${c.title}</a>`).join('');
 }
 
+function renderOnDemand(d) {
+  if (!d.ondemand_title && !d.ondemand_text) return '';
+  const link = d.ondemand_pdf || d.ondemand_button_link || 'contatti.html';
+  const isPdf = /\.pdf($|\?)/i.test(link);
+  const btn = d.ondemand_button_text
+    ? `<a class="btn btn--primary" href="${link}"${isPdf ? ' target="_blank" rel="noopener" download' : ''}>${d.ondemand_button_text}</a>`
+    : '';
+  const img = d.ondemand_image
+    ? `<div class="ondemand__media"><img src="${d.ondemand_image}" alt="${d.ondemand_title || ''}" loading="lazy"></div>`
+    : '';
+  return `
+    <div class="ondemand reveal">
+      ${img}
+      <div class="ondemand__body">
+        ${d.ondemand_eyebrow ? `<span class="eyebrow">${d.ondemand_eyebrow}</span>` : ''}
+        <h2>${d.ondemand_title || ''}</h2>
+        ${d.ondemand_text ? `<p>${d.ondemand_text}</p>` : ''}
+        ${btn}
+      </div>
+    </div>`;
+}
+
 function renderGoogleReviews(d) {
   if (!d.google_link) return '';
   return `
@@ -160,6 +182,13 @@ async function loadCorsi() {
 
     document.getElementById('corsi-list').innerHTML =
       courses.map((c, i) => renderCourse(c, i, byCourse[c.id])).join('');
+
+    const odBox = document.getElementById('ondemand');
+    const odSection = document.getElementById('ondemand-section');
+    if (odBox && odSection) {
+      const odHtml = renderOnDemand(d);
+      if (odHtml) { odBox.innerHTML = odHtml; odSection.style.display = ''; }
+    }
 
     const gBox = document.getElementById('google-reviews');
     const gSection = document.getElementById('google-reviews-section');
