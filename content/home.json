@@ -2,6 +2,12 @@
   "hero_eyebrow": "Montani Giada — Insegnante Yoga & Tessuti Aerei",
   "areas": [
     {
+      "title": "Tessuti Aerei",
+      "text": "Per bambini, adolescenti e adulti",
+      "image": "assets/img/area-tessuti.jpg",
+      "link": "corsi.html#tessuti"
+    },
+    {
       "title": "Yoga Flow",
       "text": "Lezioni dinamiche, in presenza e online",
       "image": "assets/img/area-yoga.jpg",
@@ -12,12 +18,6 @@
       "text": "Percorsi online dedicati alle mamme",
       "image": "/assets/img/corsi-gravidanza-1.jpg",
       "link": "corsi.html#gravidanza"
-    },
-    {
-      "title": "Tessuti Aerei",
-      "text": "Per bambini, adolescenti e adulti",
-      "image": "assets/img/area-tessuti.jpg",
-      "link": "corsi.html#tessuti"
     },
     {
       "title": "Eventi & Formazione",
