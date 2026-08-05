@@ -21,7 +21,7 @@
       ],
       "tag_style": "olive",
       "gallery": [
-        "/assets/img/yoga-flow-con-giada-montani.jpg",
+        "/assets/img/yoga-in-presenza-corso-giada-montani.jpg",
         "/assets/img/yoga-in-presenza-corso-giada-montani-2.jpg",
         "/assets/img/yoga-corso-giada-montani_.jpg",
         "/assets/img/yoga-in-presenza-corso-pieve-giada-montani-4.jpg",
@@ -38,7 +38,7 @@
         "Registrazioni"
       ],
       "id": "yoga-flow",
-      "image": "assets/img/corsi-yogaflow-1.jpg",
+      "image": "/assets/img/yoga-flow-con-giada-montani.jpg",
       "cta_text": "Scrivimi per le registrazioni on demand",
       "has_schedule": true,
       "description": "Una pratica fluida che unisce movimento, respiro e consapevolezza. Le lezioni sono adatte a diversi livelli e aiutano a migliorare forza, mobilità, equilibrio e benessere generale. Puoi praticare in presenza, online oppure seguire le lezioni registrate quando preferisci, rispettando i tuoi tempi e le tue esigenze.",
