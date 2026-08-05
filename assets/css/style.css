@@ -614,3 +614,20 @@ h3 { font-size: 1.35rem; line-height: 1.3; }
 }
 .course-prices .pill b { font-family: var(--font-display); font-weight: 600; }
 .course-band--white .course-prices .pill { background: var(--white); }
+
+
+/* ---------- Banner Yoga On Demand ---------- */
+.ondemand {
+  display: grid;
+  grid-template-columns: 1.05fr 1fr;
+  gap: 2.4rem;
+  align-items: center;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+@media (max-width: 860px) { .ondemand { grid-template-columns: 1fr; gap: 1.4rem; padding: 1.4rem; } }
+.ondemand__media img { width: 100%; height: auto; display: block; }
+.ondemand__body h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); margin-bottom: 0.5rem; }
+.ondemand__body p { color: var(--ink-soft); margin-bottom: 1.3rem; }
