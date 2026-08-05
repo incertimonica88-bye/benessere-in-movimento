@@ -2,7 +2,7 @@
   "google_link": "https://share.google/6Fs4nJIuCUVRr7zc8",
   "page_title": "Trova il tuo percorso",
   "cta_title": "Non sai quale corso scegliere?",
-  "page_lede": "Puoi partecipare ai miei corsi in presenza di Yoga Flow e Tessuti Aerei alla Palestra di Pieve di Coriano (MN) oppure seguire online (live o registrazioni on demand) le lezioni individuali e di gruppo di Yoga Flow, Yoga in gravidanza e Allenamento Post parto. Puoi contattarmi anche per lezioni private individuali di tessuti aerei. Scegli il percorso più adatto a te: se hai dubbi su quale sia, scrivimi!",
+  "page_lede": "Mi trovi alla palestra di Pieve di Coriano per i corsi in presenza di yoga flow e tessuti aerei, a Porto Mantovano per ginnastica dolce e online (live o registrazioni on demand) per le lezioni individuali e di gruppo di yoga in gravidanza e post parto. Puoi contattarmi anche per lezioni private individuali di tessuti aerei. Scegli il percorso più adatto a te e se hai dubbi su quale sia, scrivimi!",
   "google_title": "Le recensioni complete su Google",
   "google_text": "Leggi tutte le recensioni lasciate da chi ha già frequentato i corsi.",
   "extra_blocks": [],
@@ -201,5 +201,12 @@
     }
   ],
   "google_button": "Leggi su Google",
-  "cta_text": "Scrivimi e troviamo insieme il percorso più adatto a te."
+  "cta_text": "Scrivimi e troviamo insieme il percorso più adatto a te.",
+  "ondemand_eyebrow": "Novità",
+  "ondemand_title": "Yoga On Demand",
+  "ondemand_text": "Non riesci a partecipare alle lezioni? Contattami per accedere all'archivio Yoga On Demand: pratiche a tua disposizione, da fare e rifare quando e dove vuoi!",
+  "ondemand_image": "/assets/img/yoga-on-demand.png",
+  "ondemand_button_text": "Scopri di cosa si tratta",
+  "ondemand_pdf": "",
+  "ondemand_button_link": "contatti.html"
 }
