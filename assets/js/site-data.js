@@ -41,6 +41,16 @@ async function loadSiteData() {
     setText('contact-ig-asd-handle', d.instagram_asd_handle);
     setText('contact-address', d.address);
 
+    // Favicon impostata dal pannello: sostituisce quella di default nell'HTML.
+    // Se il campo e' vuoto restano validi i tag statici gia' presenti in <head>.
+    if (d.favicon) {
+      document.querySelectorAll('link[rel="icon"]').forEach(function (l) { l.remove(); });
+      const icon = document.createElement('link');
+      icon.rel = 'icon';
+      icon.href = d.favicon;
+      document.head.appendChild(icon);
+    }
+
     const form = document.getElementById('contact-form');
     if (form) form.setAttribute('action', 'mailto:' + d.email);
 
