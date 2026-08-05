@@ -48,15 +48,15 @@
     }
   ],
   "extra_blocks": [],
-  "hero_image": "assets/img/hero-home.jpg",
+  "hero_image": "/assets/img/chisono-stage-3.jpg",
+  "reviews_button": "Leggi tutte le recensioni",
   "chisono_title": "Giada Montani",
   "cta_text": "Scrivimi per prenotare la tua prima lezione, in presenza o online.",
   "chisono_image": "assets/img/chisono-portrait.jpg",
   "chisono_text_1": "Insegnante di tessuti aerei e yoga, con la passione per l'esplorazione del movimento e il benessere del corpo. Ho incontrato lo yoga da adolescente e mi sono innamorata dell'acrobatica aerea nel 2016.",
+  "reviews_link": "https://share.google/6Fs4nJIuCUVRr7zc8",
   "testimonials_eyebrow": "Testimonianze",
   "chisono_text_2": "Dal 1° gennaio 2026 ho dato vita a Benessere in Movimento, e sono co-fondatrice dell'ASD SOSPESE, che oggi conta più di 100 socie e soci.",
   "hero_lede": "Corsi di yoga e percorsi di benessere corporeo, in presenza e online: lezioni di gruppo e individuali, yoga in gravidanza e post parto, tessuti aerei, workshop ed eventi a contatto con la natura.",
-  "areas_title": "Un percorso su misura, in ogni fase della vita",
-  "reviews_link": "https://share.google/6Fs4nJIuCUVRr7zc8",
-  "reviews_button": "Leggi tutte le recensioni"
+  "areas_title": "Un percorso su misura, in ogni fase della vita"
 }
