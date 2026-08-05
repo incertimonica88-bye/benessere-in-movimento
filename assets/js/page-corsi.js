@@ -37,6 +37,14 @@ function renderGallery(c) {
   return `<div class="course-gallery reveal" style="margin-top:2rem;">${items}</div>`;
 }
 
+function renderPrices(prices) {
+  const list = (prices || []).filter(p => p && (p.label || p.amount));
+  if (!list.length) return '';
+  const pills = list.map(p =>
+    `<span class="pill">${p.label || ''}${p.amount ? ` <b>${p.amount}</b>` : ''}</span>`).join('');
+  return `<div class="course-prices">${pills}</div>`;
+}
+
 function renderCourse(c, index, testimonials) {
   const tagClass = c.tag_style === 'terra' ? 'tag tag--terra' : 'tag';
   const tagsHtml = (c.tags || []).map(t => `<span class="${tagClass}">${t}</span>`).join('');
@@ -59,6 +67,8 @@ function renderCourse(c, index, testimonials) {
         <div class="schedule-field"><strong>Luogo</strong><span class="${locPlaceholder}">${c.schedule_location}</span></div>
       </div>`;
   }
+
+  const pricesHtml = renderPrices(c.prices);
 
   const ctaHtml = c.cta_text
     ? `<a href="${c.cta_link || 'contatti.html'}" class="btn btn--outline" style="margin-top:0.9rem;">${c.cta_text}</a>`
@@ -90,6 +100,7 @@ function renderCourse(c, index, testimonials) {
             <p>${c.description}</p>
             ${noteHtml}
             ${scheduleHtml}
+            ${pricesHtml}
             ${ctaHtml}
           </div>
         </div>
