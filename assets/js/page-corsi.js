@@ -120,7 +120,7 @@ function renderOnDemand(d) {
   const link = d.ondemand_pdf || d.ondemand_button_link || 'contatti.html';
   const isPdf = /\.pdf($|\?)/i.test(link);
   const btn = d.ondemand_button_text
-    ? `<a class="btn btn--primary" href="${link}"${isPdf ? ' target="_blank" rel="noopener" download' : ''}>${d.ondemand_button_text}</a>`
+    ? `<a class="ondemand__btn" href="${link}"${isPdf ? ' target="_blank" rel="noopener" download' : ''}>${d.ondemand_button_text}</a>`
     : '';
   const img = d.ondemand_image
     ? `<div class="ondemand__media"><img src="${d.ondemand_image}" alt="${d.ondemand_title || ''}" loading="lazy"></div>`
@@ -129,10 +129,12 @@ function renderOnDemand(d) {
     <div class="ondemand reveal">
       ${img}
       <div class="ondemand__body">
-        ${d.ondemand_eyebrow ? `<span class="eyebrow">${d.ondemand_eyebrow}</span>` : ''}
-        <h2>${d.ondemand_title || ''}</h2>
-        ${d.ondemand_text ? `<p>${d.ondemand_text}</p>` : ''}
-        ${btn}
+        <div>
+          ${d.ondemand_eyebrow ? `<span class="ondemand__badge">${d.ondemand_eyebrow}</span>` : ''}
+          <h2>${d.ondemand_title || ''}</h2>
+          ${d.ondemand_text ? `<p>${d.ondemand_text}</p>` : ''}
+          ${btn}
+        </div>
       </div>
     </div>`;
 }
