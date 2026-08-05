@@ -200,6 +200,15 @@ collections:
               - { label: "Mostra i campi Giorno/Orario e Luogo", name: "has_schedule", widget: "boolean" }
               - { label: "Giorno e orario", name: "schedule_day", widget: "string", required: false }
               - { label: "Luogo", name: "schedule_location", widget: "string", required: false }
+              - label: "Prezzi"
+                name: "prices"
+                widget: "list"
+                required: false
+                summary: "{{label}} — {{amount}}"
+                hint: "Es. voce 'Lezione singola', prezzo '15 €'. Se lasci vuoto non compare niente."
+                fields:
+                  - { label: "Voce", name: "label", widget: "string" }
+                  - { label: "Prezzo", name: "amount", widget: "string" }
               - { label: "Testo del pulsante (se NON c'è orario)", name: "cta_text", widget: "string", required: false }
               - { label: "Link del pulsante", name: "cta_link", widget: "string", required: false }
               - label: "Foto del corso (massimo 5)"
