@@ -24,7 +24,17 @@
       "cta_text": "Scrivimi per le registrazioni on demand",
       "has_schedule": true,
       "description": "Una pratica fluida che unisce movimento, respiro e consapevolezza. Le lezioni sono adatte a diversi livelli e aiutano a migliorare forza, mobilità, equilibrio e benessere generale. Puoi praticare in presenza, online oppure seguire le lezioni registrate quando preferisci, rispettando i tuoi tempi e le tue esigenze.",
-      "schedule_location": "Palestra di Pieve di Coriano — Via Gorgadelli, 2, Borgomantovano (MN)"
+      "schedule_location": "Palestra di Pieve di Coriano — Via Gorgadelli, 2, Borgomantovano (MN)",
+      "prices": [
+        {
+          "label": "Lezione singola",
+          "amount": "15 €"
+        },
+        {
+          "label": "Pacchetto 10 lezioni",
+          "amount": "100 €"
+        }
+      ]
     },
     {
       "cta_link": "contatti.html",
