@@ -51,8 +51,7 @@ async function loadSiteData() {
       document.head.appendChild(icon);
     }
 
-    const form = document.getElementById('contact-form');
-    if (form) form.setAttribute('action', 'mailto:' + d.email);
+    // Il form usa Netlify Forms: l'invio e' gestito dal server, non piu' da mailto.
 
   } catch (e) {
     console.warn('Impossibile caricare content/site.json', e);
