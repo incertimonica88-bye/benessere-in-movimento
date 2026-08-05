@@ -33,6 +33,20 @@
   "areas_eyebrow": "Le mie attività",
   "hero_title": "Benessere\nin Movimento",
   "areas_lede": "Quattro modi per prendersi cura del corpo e della mente: scegli il tuo, in presenza o comodamente online.",
+  "testimonials": [
+    {
+      "label": "Yoga Flow",
+      "text": "Con Giada ottima esperienza. Sono due anni che ti seguo e sono molto contenta. Grazie di cuore."
+    },
+    {
+      "label": "Tessuti Aerei",
+      "text": "Insegnanti fantastiche!! Empatiche e preparatissime!!!ogni lezione è studiata nel dettaglio, si impara ma ci si diverte allo stesso tempo. Sanno trasmettere l'amore per la loro passione e questo è contagioso!!! Provare per credere 😉"
+    },
+    {
+      "label": "Yoga in gravidanza",
+      "text": "Una professionista estremamente competente e una persona dal grande cuore. Mi ha accompagnata durante la gravidanza e nel post parto con attenzione, empatia e tanta passione per il suo lavoro. Sempre presente, rassicurante e capace di prendersi cura delle mamme a 360 gradi. Un supporto prezioso che consiglio con tutto il cuore. 💖"
+    }
+  ],
   "extra_blocks": [],
   "hero_image": "assets/img/hero-home.jpg",
   "chisono_title": "Giada Montani",
