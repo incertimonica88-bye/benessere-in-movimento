@@ -1,12 +1,13 @@
 {
-  "phone_display": "349 643 7677",
-  "phone_link": "+393496437677",
-  "email": "giadamontani02@gmail.com",
-  "instagram_personal_handle": "@malmogiada",
-  "instagram_personal_url": "https://instagram.com/malmogiada",
   "instagram_asd_handle": "@sos.pese",
-  "instagram_asd_url": "https://instagram.com/sos.pese",
-  "address": "Revere di Borgo Mantovano (MN)",
+  "footer_copyright": "© 2026 Benessere in Movimento di Montani Giada",
   "footer_tagline": "Uno spazio dedicato a chi vuole prendersi cura di sé attraverso il movimento, yoga e tessuti aerei.",
-  "footer_copyright": "© 2026 Benessere in Movimento di Montani Giada"
+  "phone_link": "+393496437677",
+  "phone_display": "349 643 7677",
+  "favicon": "/assets/img/favicon-512.png",
+  "address": "Revere di Borgo Mantovano (MN)",
+  "instagram_asd_url": "https://instagram.com/sos.pese",
+  "instagram_personal_handle": "@malmogiada",
+  "email": "giadamontani02@gmail.com",
+  "instagram_personal_url": "https://instagram.com/malmogiada"
 }
