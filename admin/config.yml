@@ -207,8 +207,8 @@ collections:
                 summary: "{{label}} — {{amount}}"
                 hint: "Es. voce 'Lezione singola', prezzo '15 €'. Se lasci vuoto non compare niente."
                 fields:
-                  - { label: "Voce", name: "label", widget: "string" }
-                  - { label: "Prezzo", name: "amount", widget: "string" }
+                  - { label: "Voce", name: "label", widget: "string", required: false }
+                  - { label: "Prezzo", name: "amount", widget: "string", required: false }
               - { label: "Testo del pulsante (se NON c'è orario)", name: "cta_text", widget: "string", required: false }
               - { label: "Link del pulsante", name: "cta_link", widget: "string", required: false }
               - label: "Foto del corso (massimo 5)"
@@ -216,7 +216,7 @@ collections:
                 widget: "list"
                 required: false
                 hint: "Vengono ritagliate a quadrato in automatico. Se non carichi nulla, non compare niente."
-                field: { label: "Foto", name: "image", widget: "image" }
+                field: { label: "Foto", name: "image", widget: "image", required: false }
               - label: "Dove mettere le foto"
                 name: "gallery_position"
                 widget: "select"
@@ -232,7 +232,7 @@ collections:
                 required: false
                 summary: "{{nome}} — {{orari}}"
                 fields:
-                  - { label: "Nome del turno", name: "nome", widget: "string" }
+                  - { label: "Nome del turno", name: "nome", widget: "string", required: false }
                   - { label: "Per chi", name: "per_chi", widget: "string", required: false, hint: "Es. Scuola primaria, Medie, Dai 18 anni" }
                   - { label: "Frequenza", name: "frequenza", widget: "string", required: false, hint: "Es. 2 volte a settimana" }
                   - { label: "Giorni e orari", name: "orari", widget: "string", required: false, hint: "Es. Martedi e giovedi 17:00 - 18:15" }
