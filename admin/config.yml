@@ -202,7 +202,38 @@ collections:
               - { label: "Luogo", name: "schedule_location", widget: "string", required: false }
               - { label: "Testo del pulsante (se NON c'è orario)", name: "cta_text", widget: "string", required: false }
               - { label: "Link del pulsante", name: "cta_link", widget: "string", required: false }
-              - { label: "Link recensioni Google (opzionale)", name: "google_reviews_link", widget: "string", required: false, hint: "Se compilato, mostra un pulsante \"Leggi le recensioni su Google\" sotto le recensioni di questo corso" }
+              - label: "Foto del corso (massimo 5)"
+                name: "gallery"
+                widget: "list"
+                required: false
+                hint: "Vengono ritagliate a quadrato in automatico. Se non carichi nulla, non compare niente."
+                field: { label: "Foto", name: "image", widget: "image" }
+              - label: "Dove mettere le foto"
+                name: "gallery_position"
+                widget: "select"
+                required: false
+                default: "sotto"
+                options:
+                  - { label: "Sotto le recensioni", value: "sotto" }
+                  - { label: "Sopra le recensioni", value: "sopra" }
+              - { label: "Usa l'elenco dettagliato di orari e prezzi", name: "use_schedule_rows", widget: "boolean", required: false, default: false, hint: "Attivalo se il corso ha piu' turni con orari e prezzi diversi (es. Tessuti Aerei). Sostituisce il campo 'Giorno e orario'." }
+              - label: "Orari e prezzi — un blocco per turno"
+                name: "schedule_rows"
+                widget: "list"
+                required: false
+                summary: "{{nome}} — {{orari}}"
+                fields:
+                  - { label: "Nome del turno", name: "nome", widget: "string" }
+                  - { label: "Per chi", name: "per_chi", widget: "string", required: false, hint: "Es. Scuola primaria, Medie, Dai 18 anni" }
+                  - { label: "Frequenza", name: "frequenza", widget: "string", required: false, hint: "Es. 2 volte a settimana" }
+                  - { label: "Giorni e orari", name: "orari", widget: "string", required: false, hint: "Es. Martedi e giovedi 17:00 - 18:15" }
+                  - { label: "Prezzo mensile", name: "prezzo_mensile", widget: "string", required: false }
+                  - { label: "Prezzo trimestrale", name: "prezzo_trimestrale", widget: "string", required: false }
+              - { label: "Nota sotto gli orari", name: "schedule_note", widget: "string", required: false, hint: "Es. Sconto famiglia 20%" }
+          - { label: "Recensioni Google — titolo", name: "google_title", widget: "string", required: false }
+          - { label: "Recensioni Google — testo", name: "google_text", widget: "text", required: false }
+          - { label: "Recensioni Google — link al profilo", name: "google_link", widget: "string", required: false, hint: "Se lasci vuoto questo campo, il blocco non compare nella pagina." }
+          - { label: "Recensioni Google — testo del pulsante", name: "google_button", widget: "string", required: false }
           - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
           - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
           - label: "Sezioni libere aggiuntive"
