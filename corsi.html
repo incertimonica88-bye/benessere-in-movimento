@@ -48,27 +48,26 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" style="padding-bottom:0;">
     <div class="container">
-
-      <nav class="category-nav" aria-label="Categorie di corsi">
-        <a href="#yoga-flow">Yoga Flow</a>
-        <a href="#dolce">Ginnastica Dolce</a>
-        <a href="#gravidanza">Yoga in Gravidanza</a>
-        <a href="#post-parto">Post Parto</a>
-        <a href="#tessuti">Tessuti Aerei</a>
-        <a href="#tessuti-private">Lezioni Private Tessuti</a>
-      </nav>
-
-      <div id="corsi-list"></div>
-
+      <nav class="category-nav" id="category-nav" aria-label="Categorie di corsi"></nav>
     </div>
   </section>
+
+  <!-- I corsi vengono generati come fasce a tutta larghezza, alternate crema/bianco -->
+  <div id="corsi-list"></div>
 
   <!-- BLOCCHI EXTRA (gestibili da pannello) -->
   <section class="section">
     <div class="container">
       <div id="extra-blocks" class="extra-blocks"></div>
+    </div>
+  </section>
+
+  <!-- RECENSIONI GOOGLE (gestibile da pannello, nascosta se il link e' vuoto) -->
+  <section class="section" id="google-reviews-section" style="display:none;">
+    <div class="container">
+      <div id="google-reviews"></div>
     </div>
   </section>
 
