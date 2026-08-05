@@ -604,3 +604,13 @@ h3 { font-size: 1.35rem; line-height: 1.3; }
 .course-band--white .oc__prezzi .pill { background: var(--white); }
 .course-band__title { margin-bottom: 1.4rem; }
 @media (max-width: 760px) { .course-band { padding: 3rem 0; } }
+
+
+/* ---------- Prezzi del corso ---------- */
+.course-prices { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+.course-prices .pill {
+  background: var(--cream-deep); border-radius: 999px;
+  padding: 0.34rem 0.85rem; font-size: 0.82rem;
+}
+.course-prices .pill b { font-family: var(--font-display); font-weight: 600; }
+.course-band--white .course-prices .pill { background: var(--white); }
