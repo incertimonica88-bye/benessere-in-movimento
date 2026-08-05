@@ -76,7 +76,59 @@
       "cta_text": "",
       "has_schedule": true,
       "description": "Un'attività che unisce forza, coordinazione, flessibilità e creatività. I corsi sono rivolti a bambini, adolescenti e adulti e permettono di scoprire il piacere del movimento in sospensione, sviluppando fiducia in sé stessi e consapevolezza del proprio corpo in un ambiente sicuro e stimolante.",
-      "schedule_location": "Da definire — ASD Sospese"
+      "schedule_location": "Da definire — ASD Sospese",
+      "use_schedule_rows": true,
+      "schedule_rows": [
+        {
+          "nome": "Minicirco Open",
+          "per_chi": "Elementari e medie",
+          "frequenza": "1 volta a settimana",
+          "orari": "Venerdì 16:30 – 17:45",
+          "prezzo_mensile": "55 €",
+          "prezzo_trimestrale": "150 €"
+        },
+        {
+          "nome": "Minicirco",
+          "per_chi": "Scuola primaria",
+          "frequenza": "2 volte a settimana",
+          "orari": "Lunedì e mercoledì 17:00 – 18:15",
+          "prezzo_mensile": "75 €",
+          "prezzo_trimestrale": "200 €"
+        },
+        {
+          "nome": "Juniorsilks",
+          "per_chi": "Medie",
+          "frequenza": "2 volte a settimana",
+          "orari": "Martedì e giovedì 17:00 – 18:15",
+          "prezzo_mensile": "75 €",
+          "prezzo_trimestrale": "200 €"
+        },
+        {
+          "nome": "Teen",
+          "per_chi": "Superiori",
+          "frequenza": "2 volte a settimana",
+          "orari": "Martedì e giovedì 18:15 – 19:30",
+          "prezzo_mensile": "75 €",
+          "prezzo_trimestrale": "200 €"
+        },
+        {
+          "nome": "Tessuti New",
+          "per_chi": "Dai 18 anni",
+          "frequenza": "2 volte a settimana",
+          "orari": "Lunedì 19:30 – 20:45 e mercoledì 18:15 – 19:30",
+          "prezzo_mensile": "95 €",
+          "prezzo_trimestrale": "255 €"
+        },
+        {
+          "nome": "Circo Sospeso",
+          "per_chi": "Dai 18 anni",
+          "frequenza": "2 volte a settimana",
+          "orari": "Martedì e giovedì 19:30 – 21:00",
+          "prezzo_mensile": "95 €",
+          "prezzo_trimestrale": "255 €"
+        }
+      ],
+      "schedule_note": "Sconto famiglia 20%"
     },
     {
       "cta_link": "contatti.html",
@@ -117,5 +169,9 @@
   ],
   "cta_title": "Non sai quale corso scegliere?",
   "cta_text": "Scrivimi e troviamo insieme il percorso più adatto a te.",
-  "extra_blocks": []
+  "extra_blocks": [],
+  "google_title": "Le recensioni complete su Google",
+  "google_text": "Leggi tutte le recensioni lasciate da chi ha già frequentato i corsi.",
+  "google_link": "https://share.google/6Fs4nJIuCUVRr7zc8",
+  "google_button": "Leggi su Google"
 }
