@@ -28,6 +28,11 @@ async function loadSiteData() {
     setHref('footer-email-link', 'mailto:' + d.email);
     setHref('social-ig-personal', d.instagram_personal_url);
     setHref('social-ig-asd', d.instagram_asd_url);
+    const yt = document.getElementById('social-youtube');
+    if (yt) {
+      if (d.youtube_url) yt.setAttribute('href', d.youtube_url);
+      else yt.remove();
+    }
     setHref('social-email', 'mailto:' + d.email);
 
     // Pagina Contatti
