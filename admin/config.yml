@@ -23,6 +23,7 @@ collections:
           - { label: "Instagram personale — link", name: "instagram_personal_url", widget: "string" }
           - { label: "Instagram ASD Sospese — handle", name: "instagram_asd_handle", widget: "string" }
           - { label: "Instagram ASD Sospese — link", name: "instagram_asd_url", widget: "string" }
+          - { label: "YouTube — link al canale", name: "youtube_url", widget: "string", required: false, hint: "Se lasci vuoto, l'icona YouTube non compare nel footer." }
           - { label: "Indirizzo / zona", name: "address", widget: "string" }
           - { label: "Frase nel footer", name: "footer_tagline", widget: "text" }
           - { label: "Copyright nel footer", name: "footer_copyright", widget: "string" }
