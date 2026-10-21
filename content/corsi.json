@@ -11,14 +11,7 @@
   "ondemand_button_link": "contatti.html",
   "google_text": "Leggi tutte le recensioni lasciate da chi ha già frequentato i corsi.",
   "ondemand_eyebrow": "NOVITÀ!",
-  "extra_blocks": [
-    {
-      "type": "video",
-      "position": "fine",
-      "video_url": "https://youtu.be/FDwfyDIv9JU?si=8_y3vjxjc0qTKpPW",
-      "title": ""
-    }
-  ],
+  "extra_blocks": [],
   "courses": [
     {
       "schedule_rows": [
