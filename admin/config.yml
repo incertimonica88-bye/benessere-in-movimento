@@ -283,6 +283,12 @@ collections:
           - { label: "Formazione — paragrafo 1", name: "formazione_p1", widget: "text" }
           - { label: "Formazione — paragrafo 2", name: "formazione_p2", widget: "text" }
           - { label: "Formazione — immagine", name: "formazione_image", widget: "image" }
+          - label: "Percorsi per insegnanti — foto (massimo 5)"
+            name: "formazione_gallery"
+            widget: "list"
+            required: false
+            hint: "Vengono ritagliate a quadrato in automatico. Se non carichi nulla, il blocco non compare."
+            field: { label: "Foto", name: "image", widget: "image", required: false }
           - { label: "CTA finale — titolo", name: "cta_title", widget: "string" }
           - { label: "CTA finale — testo", name: "cta_text", widget: "text" }
           - label: "Sezioni libere aggiuntive"
