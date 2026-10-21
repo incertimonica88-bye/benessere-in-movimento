@@ -47,14 +47,7 @@
       "text": "Una professionista estremamente competente e una persona dal grande cuore. Mi ha accompagnata durante la gravidanza e nel post parto con attenzione, empatia e tanta passione per il suo lavoro. Sempre presente, rassicurante e capace di prendersi cura delle mamme a 360 gradi. Un supporto prezioso che consiglio con tutto il cuore. 💖"
     }
   ],
-  "extra_blocks": [
-    {
-      "type": "video",
-      "position": "fine",
-      "title": "Video",
-      "video_url": "https://youtube.com/shorts/J-GQIYz0uhM?si=pipQN1iv_xjgo6ej"
-    }
-  ],
+  "extra_blocks": [],
   "hero_image": "/assets/img/foto-hero.home.png",
   "reviews_button": "Leggi tutte le recensioni",
   "chisono_title": "Giada Montani",
