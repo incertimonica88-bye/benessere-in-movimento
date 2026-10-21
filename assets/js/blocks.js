@@ -78,12 +78,14 @@ function renderBlock(block) {
     }
 
     case 'video': {
-      const src = videoEmbedUrl(block.video_url);
+      const rawUrl = String(block.video_url || '');
+      const src = videoEmbedUrl(rawUrl);
       if (!src) return '';
+      const vertical = /\/shorts\//i.test(rawUrl) ? ' video-wrapper--vertical' : '';
       return `
         <div class="reveal" style="max-width:860px; margin:0 auto;">
           ${block.title ? `<h2 style="margin-bottom:1.2rem;">${block.title}</h2>` : ''}
-          <div class="video-wrapper">
+          <div class="video-wrapper${vertical}">
             <iframe src="${attr(src)}" title="${attr(block.title || 'Video')}"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin"
