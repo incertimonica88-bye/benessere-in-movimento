@@ -17,14 +17,30 @@ async function loadEventi() {
     document.getElementById('ev-eventi-image-1').src = d.eventi_image_1;
     document.getElementById('ev-eventi-image-2').src = d.eventi_image_2;
 
-    document.getElementById('ev-gallery').innerHTML = d.gallery
-      .map(src => `<img src="${src}" alt="Evento o workshop di Benessere in Movimento">`).join('');
+    const gal = document.getElementById('ev-gallery');
+    if (gal) {
+      gal.innerHTML = (d.gallery || [])
+        .map(src => `<img src="${src}" alt="Evento o workshop di Benessere in Movimento">`).join('');
+    }
 
     document.getElementById('ev-formazione-eyebrow').textContent = d.formazione_eyebrow;
     document.getElementById('ev-formazione-title').textContent = d.formazione_title;
     document.getElementById('ev-formazione-p1').textContent = d.formazione_p1;
     document.getElementById('ev-formazione-p2').textContent = d.formazione_p2;
     document.getElementById('ev-formazione-image').src = d.formazione_image;
+
+    const fg = document.getElementById('ev-formazione-gallery');
+    const fgSection = document.getElementById('formazione-gallery-section');
+    if (fg && fgSection) {
+      const imgs = (d.formazione_gallery || [])
+        .map(g => (g && typeof g === 'object') ? g.image : g)
+        .filter(Boolean);
+      if (imgs.length) {
+        fg.innerHTML = imgs
+          .map(src => `<img src="${src}" alt="${d.formazione_title || 'Percorsi per insegnanti'}" loading="lazy">`).join('');
+        fgSection.style.display = '';
+      }
+    }
 
     document.getElementById('ev-cta-title').textContent = d.cta_title;
     document.getElementById('ev-cta-text').textContent = d.cta_text;
