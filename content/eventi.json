@@ -15,7 +15,15 @@
     "/assets/img/yoga-laghi-mantova-giada-montani.webp"
   ],
   "formazione_title": "Percorsi per insegnanti e appassionati",
-  "extra_blocks": [],
+  "extra_blocks": [
+    {
+      "type": "galleria",
+      "position": "centro",
+      "images": [
+        "/assets/img/img_20260819_14494384-1-.jpeg"
+      ]
+    }
+  ],
   "formazione_image": "assets/img/chisono-stage-1.jpg",
   "title": "Crescere, insieme",
   "eventi_eyebrow": "Eventi & Workshop",
