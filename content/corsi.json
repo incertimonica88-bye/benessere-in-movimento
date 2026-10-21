@@ -95,6 +95,10 @@
     {
       "cta_link": "contatti.html",
       "tag_style": "terra",
+      "gallery": [
+        "/assets/img/img_20260819_14490712.jpeg",
+        "/assets/img/img-20260825-wa0020.jpg"
+      ],
       "note": "",
       "category_label": "Tessuti Aerei",
       "schedule_day": "",
