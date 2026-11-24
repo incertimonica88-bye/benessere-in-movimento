@@ -77,3 +77,72 @@ Ogni pagina HTML carica il proprio file tramite uno script in `assets/js/page-*.
 ## 5. Dominio personalizzato
 
 Quando avrete acquistato il dominio, da Netlify → **Domain settings → Add a custom domain** e seguite le istruzioni per puntare i DNS.
+
+## 6. Vendita video on demand — configurazione decisa
+
+Sezione di progetto, non ancora realizzata. Raccoglie le scelte fatte così da non doverle ridiscutere.
+
+### Modello scelto
+
+Video caricati su YouTube in modalità **Privato**, con invito per singolo indirizzo email.
+Scelto perché protegge davvero: chi non è stato invitato non vede il video nemmeno con il link.
+Si resta su questo modello finché i numeri lo consentono (previsti pochi acquirenti per video).
+
+Pagamento tramite **link di pagamento PayPal**, uno per prodotto, incollato nel pulsante della scheda.
+Il sito resta statico: nessun carrello, nessun database.
+
+### La regola che conta: stessa email per comprare e per guardare
+
+L'invito di YouTube è legato all'**account Google**, non all'indirizzo in sé.
+Se una persona compra indicando un indirizzo e poi guarda il video mentre è connessa con un
+account Google diverso — anche se entrambi sono Gmail — **non vede il video**.
+
+È la causa quasi certa di ogni segnalazione "Video non disponibile": non un errore di
+inserimento, ma l'accesso fatto con l'account sbagliato.
+
+### Testo da mettere nel campo email del modulo d'acquisto
+
+> Indirizzo email con cui guarderai le pratiche. Deve essere collegato a un account Google.
+> Se non hai un indirizzo di questo tipo scrivimi.
+
+Da mostrare **prima** del pagamento, non dopo.
+
+### Se l'indirizzo non è collegato a Google
+
+1. **Registrarlo come account Google.** Non serve aprire una casella Gmail: in fase di
+   registrazione si può usare un indirizzo esistente, qualunque esso sia. Due minuti.
+2. **Usare un altro indirizzo** che la persona ha già collegato a Google (spesso un vecchio
+   Gmail aperto per il telefono Android).
+3. **Eccezione una tantum:** consegnare quel singolo video via Google Drive con link riservato.
+   La protezione cala, ma è un caso isolato e non cambia il sistema.
+
+### Limiti noti di YouTube (da riverificare prima di partire)
+
+- Massimo **50 indirizzi per video**. Irrilevante al volume previsto, ma è un tetto.
+- L'invito è **per singolo video**: non esiste un invito a livello di playlist.
+- Una **playlist non trasmette i permessi** ai video che contiene. Metterli in playlist non
+  riduce il numero di inserimenti.
+- I video privati **non si possono incorporare** nel sito: solo link che porta su YouTube.
+
+Queste informazioni vengono da guide di terze parti, non dalla documentazione ufficiale, e su
+un punto si contraddicono. **Prima di scrivere le istruzioni per le clienti: prova reale** —
+caricare un video privato, invitare un proprio indirizzo non-Gmail, verificare cosa succede.
+
+### Flusso operativo
+
+Giada tiene un file con una riga per cliente: nome, cognome, email e i video acquistati.
+Le colonne dei video devono contenere il **link**, non solo il titolo, per evitare abbinamenti
+sbagliati fra pratiche dai nomi simili.
+
+Serve una **casella di stato** per cella (data d'acquisto → sostituita da "fatto" + data):
+senza, non è possibile sapere da dove ripartire fra una sessione e l'altra.
+
+Gli inserimenti su YouTube Studio li esegue Claude dal browser, a lotti, quando Giada lo chiede.
+Richiede che Giada sia connessa a YouTube in Chrome. Non è un processo automatico: non c'è modo
+di accorgersi di un pagamento e agire da soli.
+
+### Da chiarire prima di pubblicare
+
+- Condizioni di vendita, diritto di recesso e rinuncia per i contenuti digitali, adempimenti
+  fiscali: da verificare con il commercialista, incidono sui testi della pagina.
+- Mockup dell'aspetto già approvato: `anteprima-shop.html` (bozza, noindex, da rimuovere a lavoro finito).
